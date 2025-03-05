@@ -1,0 +1,11 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.page__body {
+  background-color: $primary-page-bg;
+  min-width: 320px;
+  min-height: 100%;
+}

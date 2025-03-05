@@ -1,6 +1,17 @@
 // FONTS
 $primary-font: "Roboto Condensed", "Arial", sans-serif;
+$secondary-font: "Alumni Sans", "Arial", sans-serif;
+
+// WIDTH'S
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1366px;
 
 // TEXT COLORS
 $base-text-color: #333333;
 $secondary-text-color: #ffffff;
+
+// BACKGROUND COLORS
+$primary-page-bg: #ffffff;
+$secondary-page-bg: #f8f9fc;
+$hero-gradient-bg: linear-gradient(to left, #b4022a, #1c3477);
