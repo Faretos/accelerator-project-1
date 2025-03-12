@@ -8,6 +8,10 @@
 @import "./common/mixins";
 @import "./common/global";
 @import "./common/fonts";
+
+/* BLOCKS */
+@import "./blocks/visually-hidden";
+@import "./blocks/break";
 @import "./blocks/list-style-reset";
 @import "./blocks/title-reset";
 @import "./blocks/text-offset-reset";
@@ -15,3 +19,4 @@
 @import "./blocks/page";
 @import "./blocks/main-container";
 @import "./blocks/hero";
+@import "./blocks/about";

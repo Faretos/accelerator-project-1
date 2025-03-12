@@ -8,10 +8,13 @@ $tablet-width: 768px;
 $desktop-width: 1366px;
 
 // TEXT COLORS
-$base-text-color: #333333;
+$primary-text-color: #102654;
 $secondary-text-color: #ffffff;
 
 // BACKGROUND COLORS
 $primary-page-bg: #ffffff;
 $secondary-page-bg: #f8f9fc;
-$hero-gradient-bg: linear-gradient(to left, #b4022a, #1c3477);
+$hero-gradient-bg: linear-gradient(to left, #b4022a 0%, #1c3477 60%);
+$button-gradient-bg: linear-gradient(to right, #ed0233, #003eb7);
+$video-preview-bg: rgba(20, 54, 122, 0.5);
+$video-preview-button-border-bg: rgba(237, 2, 51, 0.2);

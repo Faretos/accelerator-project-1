@@ -22,9 +22,9 @@
     <section class="hero" data-test="hero">
       <header class="hero__header">
         <picture>
-          <source type="image/svg+xml" media="(min-width: 1366px)" srcset="/__spritemap#sprite-supergym-logo.svg" width="130" height="26">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-supergym-logo.svg" width="110" height="22">
-          <img class="hero__logo" src="/__spritemap#sprite-supergym-logo.svg" width="100" height="20" alt="Логотип SUPERGYM">
+          <source type="image/svg+xml" media="(min-width: 1366px)" srcset="/__spritemap#sprite-supergym-logo-mobile-view" width="130" height="26">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-supergym-logo-mobile-view" width="110" height="22">
+          <img class="hero__logo" src="/__spritemap#sprite-supergym-logo-mobile-view" width="100" height="20" alt="Логотип SUPERGYM">
         </picture>
         <a class="hero__telephone" href="tel:+78005555555">8 800 555-55-55</a>
       </header>
@@ -48,9 +48,39 @@
         </div>
       </div>
     </section>
+    <section class="about" data-test="about">
+      <div class="about__text-wrapper">
+        <h2 class="about__title title-reset">Тренажёрный зал</h2>
+        <span class="about__sub-title text-offset-reset">Просторный зал площадью 900 кв/м</span>
+        <p>Supergym – самый большой фитнес центр <br class="break-mobile">за Уралом и идеальное место <br class="break-tablet">для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием <br class="break-mobile">для всех спортсменов.</p>
+        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+      </div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1366px)" srcset="./img/about/gym-image-desktop@1x.webp, ./img/about/gym-image-desktop@2x.webp 2x" width="660" height="400">
+        <source type="image/webp" media="(min-width: 768px)" srcset="./img/about/gym-image-tablet@1x.webp, ./img/about/gym-image-tablet@2x.webp 2x" width="678" height="345">
+        <source type="image/webp" srcset="./img/about/gym-image-mobile@1x.webp, ./img/about/gym-image-mobile@2x.webp 2x" width="320" height="280">
+
+        <source type="image/jpg" media="(min-width: 1366px)" srcset="./img/about/gym-image-desktop@1x.jpg, ./img/about/gym-image-desktop@2x.jpg 2x" width="660" height="400">
+        <source type="image/jpg" media="(min-width: 768px)" srcset="./img/about/gym-image-tablet@1x.jpg, ./img/about/gym-image-tablet@2x.jpg 2x" width="678" height="345">
+        <img class="about__image" src="./img/about/gym-image-mobile@1x.jpg" srcset="./img/about/gym-image-mobile@2x.jpg 2x" width="320" height="280" alt="Изображения зала SUPERGYM">
+      </picture>
+      <div class="about__video-wrapper">
+        <!-- <picture>
+          <source type="image/webp" media="(min-width: 1366px)" srcset="./img/about/video-preview-desktop@1x.webp, ./img/about/video-preview-desktop@2x.webp 2x" width="360" height="230">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./img/about/video-preview-tablet@1x.webp, ./img/about/video-preview-tablet@2x.webp 2x" width="270" height="170">
+          <source type="image/webp" srcset="./img/about/video-preview-mobile@1x.webp, ./img/about/video-preview-mobile@2x.webp 2x" width="320" height="170">
+
+          <source type="image/jpg" media="(min-width: 1366px)" srcset="./img/about/video-preview-desktop@1x.jpg, ./img/about/video-preview-desktop@2x.jpg 2x" width="360" height="230">
+          <source type="image/jpg" media="(min-width: 768px)" srcset="./img/about/video-preview-tablet@1x.jpg, ./img/about/video-preview-tablet@2x.jpg 2x" width="270" height="170">
+          <img class="about__video-preview" src="./img/about/video-preview-mobile@1x.jpg" srcset="./img/about/video-preview-mobile@2x.jpg 2x" width="320" height="170" alt="Видео превью">
+        </picture> -->
+        <button class="about__play-video-button" type="button">
+          <span class="visually-hidden">Запустить видео</span>
+        </button>
+      </div>
+    </section>
 
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="about">about</div>
     <div data-test="price">price</div>
     <div data-test="games">games</div>
     <div data-test="juri">juri</div>
