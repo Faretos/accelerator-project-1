@@ -1,17 +1,18 @@
 .about {
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px 0 210px;
   background-color: $primary-page-bg;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 45px 35px;
+    padding: 60px 45px 85px;
   }
 
   @media (min-width: $desktop-width) {
     @include flex (row, space-between, flex-start);
 
-    padding: 120px 103px 125px;
+    width: 1366px;
+    padding: 120px 103px 204px;
     flex-wrap: wrap;
   }
 }
@@ -112,7 +113,7 @@
   margin: 0 auto;
   width: 320px;
   height: 170px;
-  position: relative;
+  position: absolute;
   background-image: url("../../img/about/video-preview-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -134,7 +135,8 @@
   @media (min-width: $tablet-width) {
     width: 270px;
     background-image: url("../../img/about/video-preview-tablet@1x.jpg");
-    top: -121px;
+    bottom: 36px;
+    left: 249px;
 
     &::before {
       width: 270px;
@@ -148,7 +150,8 @@
   @media (min-width: $desktop-width) {
     width: 360px;
     height: 230px;
-    top: -151px;
+    bottom: 125px;
+    left: 503px;
 
     &::before {
       width: 360px;

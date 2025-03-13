@@ -1,0 +1,314 @@
+.price {
+  background-color: $secondary-page-bg;
+  position: relative;
+  z-index: -2;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      @include pseudo (328px, 328px);
+
+      bottom: 30px;
+      right: -1px;
+      background-image: url("../../img/price/barbell-load-tablet@1x.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      z-index: -1;
+    }
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/price/barbell-load-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    overflow: hidden;
+
+    &::after {
+      width: 384px;
+      height: 384px;
+      bottom: 31px;
+      right: -40px;
+
+      background-image: url("../../img/price/barbell-load-desktop@1x.png");
+    }
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/price/barbell-load-desktop@2x.png");
+    }
+  }
+}
+
+.price__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 41px 15px 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 60px 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1366px;
+    padding: 100px 103px;
+  }
+}
+
+.price__title {
+  margin-bottom: 31px;
+  font-family: $secondary-font;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.price__offers-list {
+  @include flex (row, space-between, center);
+
+  width: 290px;
+  margin: 0 auto 30px;
+  flex-wrap: wrap;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $inactive-text-color;
+  position: relative;
+
+  &::after {
+    @include pseudo (100%, 2px);
+
+    bottom: -8px;
+    background-color: rgba(120, 120, 120, 0.2);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    margin: 0 auto 53px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    margin: 0 auto 50px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      bottom: -10px;
+    }
+  }
+}
+
+.price__offers-item--active {
+  color: $primary-text-color;
+  position: relative;
+
+  &::after {
+    @include pseudo (100%, 2px);
+
+    bottom: -8px;
+    background-color: $price-offers-item-acitve-underline;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      bottom: -10px;
+    }
+  }
+}
+
+.price__offers-item-content {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.price__programm-list {
+  width: 290px;
+
+  @media (min-width: $tablet-width) {
+    width: 380px;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    width: 1160px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+.price__programm-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 18px;
+  width: 290px;
+  padding: 59px 42px 50px;
+  background-color: $primary-page-bg;
+  text-align: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 380px;
+    padding: 65px;
+    row-gap: 22px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    row-gap: 17px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.price__programm-item-title {
+  font-family: $primary-font;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $primary-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.price__programm-item-text {
+  margin-bottom: 46px;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: $primary-text-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.price__programm-item-price {
+  position: relative;
+  margin-bottom: 1px;
+  padding-right: 34px;
+  font-family: $primary-font;
+  font-size: 48px;
+  line-height: 150%;
+  font-weight: 700;
+  color: $price-text-color;
+  z-index: 2;
+
+  &::after {
+    @include pseudo (24px, 33px);
+
+    mask-image: url("/__spritemap#sprite-currency-icon-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 100%;
+    background-color: $primary-text-color;
+    top: 20px;
+    right: 37px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-right: 44px;
+    font-size: 60px;
+
+    &::after {
+      width: 30px;
+      height: 42px;
+      top: 24px;
+      right: 42px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 45px;
+
+    &::after {
+      right: 32px;
+    }
+  }
+}
+
+.price__programm-item-price-shaddow {
+  position: absolute;
+  top: 137px;
+  left: 64px;
+  font-family: $primary-font;
+  font-size: 80px;
+  line-height: 150%;
+  font-weight: 700;
+  color: $price-shadow-text-color;
+  opacity: 0.48;
+
+  @media (min-width: $tablet-width) {
+    top: 156px;
+    left: 89px;
+    font-size: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 147px;
+    left: 78px;
+  }
+}
+
+.price__programm-item-button {
+  padding: 25px 47px;
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  color: $primary-text-color;
+  border: 2px solid $primary-text-color;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 59px;
+  }
+}

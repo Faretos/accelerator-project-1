@@ -19,6 +19,7 @@
 
 <body class="page__body">
   <main class="main-container">
+    <!-- HERO -->
     <section class="hero" data-test="hero">
       <header class="hero__header">
         <picture>
@@ -48,6 +49,7 @@
         </div>
       </div>
     </section>
+    <!-- ABOUT -->
     <section class="about" data-test="about">
       <div class="about__text-wrapper">
         <h2 class="about__title title-reset">Тренажёрный зал</h2>
@@ -65,25 +67,139 @@
         <img class="about__image" src="./img/about/gym-image-mobile@1x.jpg" srcset="./img/about/gym-image-mobile@2x.jpg 2x" width="320" height="280" alt="Изображения зала SUPERGYM">
       </picture>
       <div class="about__video-wrapper">
-        <!-- <picture>
-          <source type="image/webp" media="(min-width: 1366px)" srcset="./img/about/video-preview-desktop@1x.webp, ./img/about/video-preview-desktop@2x.webp 2x" width="360" height="230">
-          <source type="image/webp" media="(min-width: 768px)" srcset="./img/about/video-preview-tablet@1x.webp, ./img/about/video-preview-tablet@2x.webp 2x" width="270" height="170">
-          <source type="image/webp" srcset="./img/about/video-preview-mobile@1x.webp, ./img/about/video-preview-mobile@2x.webp 2x" width="320" height="170">
-
-          <source type="image/jpg" media="(min-width: 1366px)" srcset="./img/about/video-preview-desktop@1x.jpg, ./img/about/video-preview-desktop@2x.jpg 2x" width="360" height="230">
-          <source type="image/jpg" media="(min-width: 768px)" srcset="./img/about/video-preview-tablet@1x.jpg, ./img/about/video-preview-tablet@2x.jpg 2x" width="270" height="170">
-          <img class="about__video-preview" src="./img/about/video-preview-mobile@1x.jpg" srcset="./img/about/video-preview-mobile@2x.jpg 2x" width="320" height="170" alt="Видео превью">
-        </picture> -->
         <button class="about__play-video-button" type="button">
           <span class="visually-hidden">Запустить видео</span>
         </button>
       </div>
     </section>
+    <!-- PRICE -->
+    <section class="price" data-test="price">
+      <div class="price__wrapper">
+        <h2 class="price__title title-reset">Абонементы</h2>
+        <ul class="price__offers-list list-style-reset">
+          <li class="price__offers-item price__offers-item--active" data-tab="first-tab">1 месяц</li>
+          <li class="price__offers-item" data-tab="second-tab">6 месяцев</li>
+          <li class="price__offers-item" data-tab="third-tab">12 месяцев</li>
+        </ul>
+        <!-- 1 MONTH -->
+        <div class="price__offers-item-content price__offers-item-content--active" id="first-tab">
+          <ul class="price__programm-list list-style-reset">
+            <li class="price__programm-item">
+              <h3 class="price__programm-item-title title-reset">С тренером</h3>
+              <p class="price__programm-item-text text-offset-reset">12 занятий</p>
+              <span class="price__programm-item-price">5000</span>
+              <span class="price__programm-item-price-shaddow">5000</span>
+              <a class="price__programm-item-button" href="#">Купить абонемент</a>
+            </li>
+            <li class="price__programm-item">
+              <h3 class="price__programm-item-title title-reset">Дневной</h3>
+              <p class="price__programm-item-text text-offset-reset">с 8:00 до 17:00</p>
+              <span class="price__programm-item-price">1700</span>
+              <span class="price__programm-item-price-shaddow">1700</span>
+              <a class="price__programm-item-button" href="#">Купить абонемент</a>
+            </li>
+            <li class="price__programm-item">
+              <h3 class="price__programm-item-title title-reset">Полный день</h3>
+              <p class="price__programm-item-text text-offset-reset">с 8:00 до 22:00</p>
+              <span class="price__programm-item-price">2700</span>
+              <span class="price__programm-item-price-shaddow">2700</span>
+              <a class="price__programm-item-button" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 6 MONTH -->
+        <div class="price__offers-item-content" id="second-tab">
+          <ul class="price__programm-list list-style-reset">
+            <li class="price__programm-item">
+              <h3 class="price__programm-item-title title-reset">С тренером</h3>
+              <p class="price__programm-item-text text-offset-reset">12 занятий</p>
+              <span class="price__programm-item-price">30 000</span>
+              <span class="price__programm-item-price-shaddow">30 000</span>
+              <a class="price__programm-item-button" href="#">Купить абонемент</a>
+            </li>
+            <li class="price__programm-item">
+              <h3 class="price__programm-item-title title-reset">Дневной</h3>
+              <p class="price__programm-item-text text-offset-reset">с 8:00 до 17:00</p>
+              <span class="price__programm-item-price">10 200</span>
+              <span class="price__programm-item-price-shaddow">10 200</span>
+              <a class="price__programm-item-button" href="#">Купить абонемент</a>
+            </li>
+            <li class="price__programm-item">
+              <h3 class="price__programm-item-title title-reset">Полный день</h3>
+              <p class="price__programm-item-text text-offset-reset">с 8:00 до 22:00</p>
+              <span class="price__programm-item-price">16 200</span>
+              <span class="price__programm-item-price-shaddow">16 200</span>
+              <a class="price__programm-item-button" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 12 MONTH -->
+        <div class="price__offers-item-content" id="third-tab">
+          <ul class="price__programm-list list-style-reset">
+            <li class="price__programm-item">
+              <h3 class="price__programm-item-title title-reset">С тренером</h3>
+              <p class="price__programm-item-text text-offset-reset">12 занятий</p>
+              <span class="price__programm-item-price">60 000</span>
+              <span class="price__programm-item-price-shaddow">60 000</span>
+              <a class="price__programm-item-button" href="#">Купить абонемент</a>
+            </li>
+            <li class="price__programm-item">
+              <h3 class="price__programm-item-title title-reset">Дневной</h3>
+              <p class="price__programm-item-text text-offset-reset">с 8:00 до 17:00</p>
+              <span class="price__programm-item-price">20 400</span>
+              <span class="price__programm-item-price-shaddow">20 400</span>
+              <a class="price__programm-item-button" href="#">Купить абонемент</a>
+            </li>
+            <li class="price__programm-item">
+              <h3 class="price__programm-item-title title-reset">Полный день</h3>
+              <p class="price__programm-item-text text-offset-reset">с 8:00 до 22:00</p>
+              <span class="price__programm-item-price">32 400</span>
+              <span class="price__programm-item-price-shaddow">32 400</span>
+              <a class="price__programm-item-button" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- GAMES -->
+    <section class="games" data-test="games">
+      <div class="games__wrapper">
+        <div class="games__text-content-wrapper">
+          <h2 class="games__title title-reset">SUPER GAMES</h2>
+          <div class="games__date-wrapper">
+            <p class="games__date text-offset-reset">Дата</p>
+            <span class="games__number games__number--time">7</span>
+            <p class="games__month-and-year text-offset-reset">Марта 2019</p>
+            <p class="games__time text-offset-reset">Время</p>
+            <span class="games__number">12:00</span>
+          </div>
+          <p class="games__subtitle text-offset-reset">Ежегодные соревнования по CrossFit</p>
+          <a class="games__link" href="#">заполнить заявку</a>
+        </div>
+        <div class="games__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)" srcset="./img/games/games-image-desktop@1x.webp, ./img/games/games-image-desktop@2x.webp 2x" width="660" height="500">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/games/games-image-tablet@1x.webp, ./img/games/games-image-tablet@2x.webp 2x" width="378" height="348">
+            <source type="image/webp" srcset="./img/games/games-image-mobile@1x.webp, ./img/games/games-image-mobile@2x.webp 2x" width="290" height="290">
+
+            <source type="image/jpg" media="(min-width: 01366px)" srcset="./img/games/games-image-desktop@1x.jpg, ./img/games/games-image-desktop@2x.jpg 2x" width="660" height="500">
+            <source type="image/jpg" media="(min-width: 768px)" srcset="./img/games/games-image-tablet@1x.jpg, ./img/games/games-image-tablet@2x.jpg 2x" width="378" height="348">
+            <img class="games__image" src="./img/games/games-image-mobile@1x.jpg" srcset="./img/games/games-image-mobile@2x.jpg 2x" width="290" height="290" alt="Спортсмен">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="juri" data-test="juri">
+      <div class="juri__wrapper">
+        <ul class="juri__list">
+          <li classs="juri__item">
+            <img class="juri image" src="" width="260" height="300" alt="Анна Павлова">
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
     <div data-test="features">features</div>
     <div data-test="offers">offers</div>
     <div data-test="faq">faq</div>
