@@ -1,0 +1,136 @@
+.faq {
+  background-color: $secondary-page-bg;
+}
+
+.faq__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 71px 15px 70px;
+}
+
+.faq__title {
+  margin: 0 0 34px;
+  font-family: $secondary-font;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $primary-text-color;
+  text-align: center;
+}
+
+.faq__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+.faq__button {
+  padding: 14px 0;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  background-color: transparent;
+  color: $primary-text-color;
+  border: 1px solid $faq-tabs-buttons-border-color;
+
+  &--active {
+    color: $secondary-text-color;
+    background: $button-gradient-bg;
+    border: none;
+  }
+}
+
+.faq__accordion-tab {
+  position: relative;
+  padding: 20px 52px 21px 0;
+
+  &::before {
+    @include pseudo (100%, 1px);
+
+    background-color: #74819c;
+    top: -1px;
+    left: 0;
+  }
+}
+
+.faq__accodrion-tab-content h3 {
+  margin: 0;
+
+  // margin: 0 0 20px;
+  padding: 0 22px 0 0;
+  font-family: $primary-font;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $primary-text-color;
+}
+
+.faq__tab {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.faq__tab .faq__accordion-tab .faq__accodrion-tab-content p {
+  display: none;
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: $primary-text-color;
+}
+
+.faq__accordion-tab-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: $faq-tab-button-bg-color;
+  border-radius: 50%;
+  border: 1px solid $faq-tab-button-active-bg-color;
+  top: 25px;
+  right: 0;
+
+  &::before {
+    @include pseudo (14px, 2px);
+
+    top: 13px;
+    left: 7px;
+    background-color: $faq-tab-button-active-bg-color;
+  }
+
+  &::after {
+    @include pseudo (14px, 2px);
+
+    transform: rotate(90deg);
+    top: 13px;
+    left: 7px;
+    background-color: $faq-tab-button-active-bg-color;
+  }
+}
+
+
+.faq__accordion-tab-button--active {
+  background-color: $faq-tab-button-active-bg-color;
+
+  &::before {
+    background-color: $primary-page-bg;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.faq__tab--active .faq__accordion-tab--acitve .faq__accodrion-tab-content h3 {
+  margin: 0 0 20px;
+}
+
+.faq__tab--active .faq__accordion-tab--acitve .faq__accodrion-tab-content p {
+  display: block;
+}

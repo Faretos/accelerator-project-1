@@ -13,6 +13,9 @@ $secondary-text-color: #ffffff;
 $inactive-text-color: rgba(16, 38, 84, 0.5);
 $price-text-color: #103aae;
 $price-shadow-text-color: #e8e8e8;
+$features-secondary-text-color: #2e35ac;
+$gradient-text-color-mobile: linear-gradient(128deg, #d10a42 20%, #0041ca 47%);
+$gradient-text-color-tablet: linear-gradient(128deg, #d10a42 0%, #0041ca 47%);
 
 // BACKGROUND COLORS
 $primary-page-bg: #ffffff;
@@ -24,3 +27,10 @@ $video-preview-button-border-bg: rgba(237, 2, 51, 0.2);
 $price-offers-item-acitve-underline: #d10a42;
 $games-text-bg-color: #ed0233;
 $link-border-color: #ffffff;
+$accent-feature-bg: #1c3374;
+$feature-desktop-decor-bg: rgba(209, 10, 66, 0.2);
+$offers-accent-bg: #ed0233;
+$offer-border-color: linear-gradient(128deg, #d10a42, #00359f);
+$faq-tabs-buttons-border-color: rgba(16, 38, 84, 0.2);
+$faq-tab-button-bg-color: transparent;
+$faq-tab-button-active-bg-color: #1c3374;

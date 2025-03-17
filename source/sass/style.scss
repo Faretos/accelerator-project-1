@@ -2,8 +2,9 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "../vendor/swiper/swiper-bundle";
 
-/* GLOBAL */
+// COMMON
 @import "./common/variables";
 @import "./common/mixins";
 @import "./common/global";
@@ -22,3 +23,8 @@
 @import "./blocks/about";
 @import "./blocks/price";
 @import "./blocks/games";
+@import "./blocks/juri";
+@import "./blocks/features";
+@import "./blocks/offers";
+@import "./blocks/faq";
+@import "./blocks/faq-tab";
