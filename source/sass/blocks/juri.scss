@@ -62,9 +62,14 @@
 
 .juri__prev-button {
   display: none;
+  color: #102654;
 
   @media (min-width: $tablet-width) {
     display: block;
+    top: 146px;
+    left: 45px;
+    width: 60px;
+    height: 300px;
 
     &::before {
       @include pseudo (24px, 24px);
@@ -79,22 +84,28 @@
 
   @media (min-width: $desktop-width) {
     top: 216px;
+    left: 43px;
 
     &::before {
       width: 23px;
       height: 23px;
 
       top: 135px;
-      left: 7px;
+      left: 12px;
     }
   }
 }
 
 .juri__next-button {
   display: none;
+  color: #102654;
 
   @media (min-width: $tablet-width) {
     display: block;
+    top: 146px;
+    right: 45px;
+    width: 60px;
+    height: 300px;
 
     &::before {
       @include pseudo (24px, 24px);
@@ -103,19 +114,20 @@
       border-right: 1px solid $primary-text-color;
       transform: rotate(45deg);
       top: 138px;
-      left: 11px;
+      left: 25px;
     }
   }
 
   @media (min-width: $desktop-width) {
     top: 216px;
+    right: 43px;
 
     &::before {
       width: 23px;
       height: 23px;
 
       top: 135px;
-      left: 28px;
+      left: 27px;
     }
   }
 }
