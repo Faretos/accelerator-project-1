@@ -670,9 +670,61 @@
           </ul>
         </div>
       </div>
-    </section><!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="footer">footer</div>
+    </section>
   </main>
+  <!-- FOOTER -->
+  <footer class="footer" data-test="footer">
+    <div class="footer__wrapper">
+      <h2 class="visually-hidden">Подвал сайта</h2>
+      <div class="footer__logo-wrapper">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1366px)" srcset="/__spritemap#sprite-supergym-logo-mobile-view" width="130" height="26">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-supergym-logo-mobile-view" width="110" height="22">
+          <img class="footer__logo" src="/__spritemap#sprite-supergym-logo-mobile-view" width="100" height="20" alt="Логотип SUPERGYM">
+        </picture>
+      </div>
+      <!-- FOOTER NAV -->
+      <div class="footer__lists-wrapper">
+        <nav class="footer__navigation">
+          <ul class="footer__nav-list list-style-reset">
+            <li class="footer__nav-item footer__nav-item--services">
+              <a class="footer__link" href="#">Услуги</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--subscribe">
+              <a class="footer__link" href="#">Абонементы</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--offers">
+              <a class="footer__link" href="#">Акции</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--juri">
+              <a class="footer__link" href="#">Тренеры</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item--schedule">
+              <a class="footer__link" href="#">Расписание</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- SOCIAL-LIST -->
+        <ul class="footer__social-list social-list list-style-reset">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--vk" href="https://vk.com/">
+              <span class="visually-hidden">Мы в Vk</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--ok" href="https://ok.ru/">
+              <span class="visually-hidden">Мы в Одноклассниках</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--rd" href="https://www.reddit.com/">
+              <span class="visually-hidden">Мы в Reddit</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
   <script type="module" src="./js/main.js" defer></script>
 </body>
 

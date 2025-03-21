@@ -19,11 +19,11 @@
 .contacts__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 37px 15px 40px;
+  padding: 37px 15px 36px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 60px 164px;
+    padding: 60px 164px 59px;
   }
 
   @media (min-width: $desktop-width) {

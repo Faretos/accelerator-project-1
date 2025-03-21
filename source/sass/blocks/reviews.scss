@@ -139,7 +139,10 @@
 }
 
 .reviews__prev-slide {
+  display: none;
+
   @media (min-width: $tablet-width) {
+    display: block;
     left: 0;
     width: 134px;
 
@@ -162,7 +165,10 @@
 }
 
 .reviews__next-slide {
+  display: none;
+
   @media (min-width: $tablet-width) {
+    display: block;
     right: 0;
     width: 134px;
 
