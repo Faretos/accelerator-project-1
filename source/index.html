@@ -18,6 +18,7 @@
 </head>
 
 <body class="page__body">
+  <!-- MAIN -->
   <main class="main-container">
     <!-- HERO -->
     <section class="hero" data-test="hero">
@@ -80,9 +81,15 @@
       <div class="price__wrapper">
         <h2 class="price__title title-reset">Абонементы</h2>
         <ul class="price__offers-list list-style-reset">
-          <li class="price__offers-item price__offers-item--active" data-tab="first-tab">1 месяц</li>
-          <li class="price__offers-item" data-tab="second-tab">6 месяцев</li>
-          <li class="price__offers-item" data-tab="third-tab">12 месяцев</li>
+          <li class="price__offers-item price__offers-item--active" data-tab="first-tab">
+            <button class="price__tab-button price__tab-button--active" type="button">1 месяц</button>
+          </li>
+          <li class="price__offers-item" data-tab="second-tab">
+            <button class="price__tab-button" type="button">6 месяцев</button>
+          </li>
+          <li class="price__offers-item" data-tab="third-tab">
+            <button class="price__tab-button" type="button">12 месяцев</button>
+          </li>
         </ul>
         <!-- 1 MONTH -->
         <div class="price__offers-item-content price__offers-item-content--active" id="first-tab">

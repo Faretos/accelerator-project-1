@@ -199,6 +199,7 @@
   bottom: 99px;
   left: 134px;
   z-index: 3;
+  cursor: pointer;
 
   &::before {
     @include pseudo(72px, 72px);

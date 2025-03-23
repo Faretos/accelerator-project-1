@@ -1,7 +1,7 @@
 .price {
   background-color: $secondary-page-bg;
   position: relative;
-  z-index: -2;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     &::after {
@@ -61,7 +61,7 @@
 }
 
 .price__title {
-  margin-bottom: 31px;
+  margin-bottom: 29px;
   font-family: $secondary-font;
   font-size: 32px;
   line-height: 32px;
@@ -85,55 +85,71 @@
   @include flex (row, space-between, center);
 
   width: 290px;
-  margin: 0 auto 38px;
+  margin: 0 auto 34px;
   flex-wrap: wrap;
-  font-family: $primary-font;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  color: $inactive-text-color;
   position: relative;
 
   &::after {
     @include pseudo (100%, 2px);
 
-    bottom: -8px;
+    bottom: -4px;
     background-color: rgba(120, 120, 120, 0.2);
   }
 
   @media (min-width: $tablet-width) {
     width: 310px;
-    margin: 0 auto 53px;
+    margin: 0 auto 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    margin: 0 auto 46px;
+
+    &::after {
+      bottom: -6px;
+    }
+  }
+}
+
+.price__offers-item {
+  position: relative;
+}
+
+.price__tab-button {
+  padding: 0;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $inactive-text-color;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 350px;
-    margin: 0 auto 50px;
     font-size: 20px;
     line-height: 20px;
-
-    &::after {
-      bottom: -10px;
-    }
   }
 }
 
-.price__offers-item--active {
+.price__tab-button--active {
   color: $primary-text-color;
-  position: relative;
 
   &::after {
     @include pseudo (100%, 2px);
 
-    bottom: -8px;
+    bottom: -4px;
     background-color: $price-offers-item-acitve-underline;
   }
 
   @media (min-width: $desktop-width) {
     &::after {
-      bottom: -10px;
+      bottom: -6px;
     }
   }
 }
@@ -315,5 +331,78 @@
 
   @media (min-width: $desktop-width) {
     padding: 25px 59px;
+  }
+}
+
+.price__tab-button--active:focus {
+  outline: none;
+}
+
+.price__tab-button:not(.price__tab-button--active):hover {
+  color: $tab-button-hover-color;
+
+  &::after {
+    @include pseudo (100%, 2px);
+
+    bottom: -4px;
+    background-color: #787878;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      bottom: -6px;
+    }
+  }
+}
+
+.price__tab-button:not(.price__tab-button--active):focus {
+  color: $form-bg-color;
+  outline: none;
+
+  &::after {
+    @include pseudo (100%, 2px);
+
+    bottom: -4px;
+    background-color: $form-bg-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      bottom: -6px;
+    }
+  }
+}
+
+.price__tab-button:not(.price__tab-button--active):active {
+  &::after {
+    @include pseudo (100%, 2px);
+
+    bottom: -4px;
+    background-color: $offers-accent-bg;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      bottom: -6px;
+    }
+  }
+}
+
+.price__tab-button:disabled,
+.price__tab-button.disabled {
+  color: $dark-bg-button-disabled-color;
+  pointer-events: none;
+
+  &::after {
+    @include pseudo (100%, 2px);
+
+    bottom: -4px;
+    background-color: $dark-bg-button-disabled-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      bottom: -6px;
+    }
   }
 }
