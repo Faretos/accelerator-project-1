@@ -5,19 +5,21 @@
 
   @media (min-width: $tablet-width) {
     &::after {
-      @include pseudo (328px, 328px);
+      @include pseudo (325px, 324px);
 
-      bottom: 30px;
-      right: -1px;
+      bottom: 32px;
+      right: 0;
       background-image: url("../../img/price/barbell-load-tablet@1x.png");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: auto;
+      background-size: cover;
       z-index: -1;
     }
 
     @media (resolution >= 2dppx) {
-      background-image: url("../../img/price/barbell-load-tablet@2x.png");
+      &::after {
+        background-image: url("../../img/price/barbell-load-tablet@2x.png");
+      }
     }
   }
 
@@ -25,16 +27,19 @@
     overflow: hidden;
 
     &::after {
-      width: 384px;
-      height: 384px;
-      bottom: 31px;
-      right: -40px;
+      width: 462px;
+      height: 446px;
+      bottom: 0;
+      right: -79px;
+      background-size: contain;
 
       background-image: url("../../img/price/barbell-load-desktop@1x.png");
     }
 
     @media (resolution >= 2dppx) {
-      background-image: url("../../img/price/barbell-load-desktop@2x.png");
+      &::after {
+        background-image: url("../../img/price/barbell-load-desktop@2x.png");
+      }
     }
   }
 }
@@ -80,7 +85,7 @@
   @include flex (row, space-between, center);
 
   width: 290px;
-  margin: 0 auto 30px;
+  margin: 0 auto 38px;
   flex-wrap: wrap;
   font-family: $primary-font;
   font-size: 16px;
@@ -163,13 +168,13 @@
   grid-template-columns: 1fr;
   row-gap: 18px;
   width: 290px;
-  padding: 59px 42px 50px;
+  padding: 51px 42px 50px;
   background-color: $primary-page-bg;
   text-align: center;
   align-items: center;
 
   &:not(:last-child) {
-    margin-bottom: 27px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $tablet-width) {
@@ -272,7 +277,7 @@
 
 .price__programm-item-price-shaddow {
   position: absolute;
-  top: 137px;
+  top: 129px;
   left: 64px;
   font-family: $primary-font;
   font-size: 80px;

@@ -1,6 +1,6 @@
 .about {
   margin: 0 auto;
-  padding: 40px 0 210px;
+  padding: 40px 0;
   background-color: $primary-page-bg;
   position: relative;
 
@@ -109,6 +109,28 @@
   display: block;
 }
 
+.about__video-wrapper-wrapper {
+  width: 320px;
+  height: 170px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    bottom: 36px;
+    left: 249px;
+    width: 270px;
+    height: 170px;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 125px;
+    left: 503px;
+    width: 360px;
+    height: 230px;
+  }
+}
+
 .about__video-wrapper {
   margin: 0 auto;
   width: 320px;
@@ -133,10 +155,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 270px;
+    position: absolute;
+    transform: scale(1.1);
+    width: 98%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+
     background-image: url("../../img/about/video-preview-tablet@1x.jpg");
-    bottom: 36px;
-    left: 249px;
+    bottom: 7px;
+    left: 11px;
 
     &::before {
       width: 270px;
@@ -148,10 +176,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    transform: scale(1);
     width: 360px;
     height: 230px;
-    bottom: 125px;
-    left: 503px;
+    bottom: 0;
+    left: 0;
 
     &::before {
       width: 360px;
@@ -167,7 +196,7 @@
   border: none;
   background: $button-gradient-bg;
   position: absolute;
-  top: 59px;
+  bottom: 99px;
   left: 134px;
   z-index: 3;
 
@@ -184,12 +213,13 @@
     @include pseudo(9px, 9px);
 
     border: 6px solid transparent;
-    border-left: 9px solid #ffffff;
+    border-left: 9px solid $primary-page-bg;
     top: 20px;
     left: 23px;
   }
 
   @media (min-width: $tablet-width) {
+    bottom: 59px;
     left: 109px;
   }
 
@@ -208,9 +238,91 @@
 
     &::after {
       border: 8px solid transparent;
-      border-left: 13px solid #ffffff;
+      border-left: 13px solid $primary-page-bg;
       top: 28px;
       left: 32px;
+    }
+  }
+}
+
+.about__play-video-button:hover {
+  background: $primary-page-bg;
+
+  &::before {
+    border: 2px solid $play-button-hover-color;
+  }
+
+  &::after {
+    border: 6px solid transparent;
+    border-left: 9px solid $play-button-hover-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      border: 8px solid transparent;
+      border-left: 13px solid $play-button-hover-color;
+    }
+  }
+}
+
+.about__play-video-button:focus {
+  outline: none;
+  background: $play-button-focus-color;
+
+  &::before {
+    border: 2px solid $phone-active-color;
+  }
+
+  &::after {
+    border: 6px solid transparent;
+    border-left: 9px solid $phone-active-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      border: 8px solid transparent;
+      border-left: 13px solid $phone-active-color;
+    }
+  }
+}
+
+.about__play-video-button:active {
+  background: $play-button-active-color;
+
+  &::before {
+    border: 2px solid $phone-active-color;
+  }
+
+  &::after {
+    border: 6px solid transparent;
+    border-left: 9px solid $phone-active-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      border: 8px solid transparent;
+      border-left: 13px solid $phone-active-color;
+    }
+  }
+}
+
+.about__play-video-button:disabled,
+.about__play-video-button.disabled {
+  background: $play-button-active-color;
+
+  &::before {
+    border: 2px solid $play-button-disabled-color;
+  }
+
+  &::after {
+    border: 6px solid transparent;
+    border-left: 9px solid $play-button-disabled-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      border: 8px solid transparent;
+      border-left: 13px solid $play-button-disabled-color;
     }
   }
 }

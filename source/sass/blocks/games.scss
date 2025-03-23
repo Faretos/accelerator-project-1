@@ -70,7 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 33px;
+    margin-bottom: 28px;
   }
 }
 
@@ -97,7 +97,7 @@
 
     &::after {
       width: 100px;
-      bottom: 3px;
+      bottom: 2px;
     }
   }
 
@@ -116,7 +116,7 @@
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 
     &--time {
       margin-bottom: 9px;
@@ -169,8 +169,8 @@
     line-height: 24px;
 
     &::after {
-      width: 95px;
-      bottom: 5px;
+      width: 100px;
+      bottom: 2px;
     }
   }
 }

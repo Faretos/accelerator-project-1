@@ -1,5 +1,5 @@
 .hero {
-  padding: 0 0 32px;
+  padding: 0 0 34px;
   font-family: $primary-font;
   background: $hero-gradient-bg;
   color: $secondary-text-color;
@@ -158,8 +158,8 @@
 }
 
 .hero__button {
-  margin-top: 31px;
-  padding: 22px 89px;
+  margin-top: 33px;
+  padding: 22px 0;
   grid-row: 3 / 4;
   grid-column: 1 / -1;
   font-family: $primary-font;
@@ -169,21 +169,20 @@
   text-transform: uppercase;
   color: $secondary-text-color;
   background-color: transparent;
-  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 2px $primary-page-bg;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 31px;
-    margin-top: 3px;
+    margin-bottom: 33px;
+    margin-top: 6px;
     margin-right: 2px;
-    padding: 20px 37px;
+    padding: 20px 38px;
     grid-column: 1 / 3;
     justify-self: end;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
-    margin-right: 0;
-    padding: 26px 80px;
+    margin: 3px 0 35px;
+    padding: 25px 80px;
     align-self: center;
   }
 }
@@ -206,4 +205,47 @@
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.hero__telephone:hover {
+  color: $phone-hover-color;
+}
+
+.hero__telephone:focus {
+  color: $phone-focus-color;
+}
+
+.hero__telephone:active {
+  color: $phone-active-color;
+  text-decoration: underline;
+}
+
+.hero__telephone.disabled {
+  color: $phone-disabled-color;
+  pointer-events: none;
+}
+
+.hero__button:hover {
+  color: $secondary-text-color;
+  background: $button-faq-gradient-bg;
+  box-shadow: none;
+}
+
+.hero__button:focus {
+  color: $secondary-text-color;
+  background: $dark-bg-button-focus-bg-color;
+  box-shadow: 0 0 0 2px $dark-bg-button-focus-border-color;
+  outline: none;
+}
+
+.hero__button:active {
+  color: $dark-bg-button-active-text-color;
+}
+
+.hero__button.disabled,
+.hero__button:disabled {
+  background-color: $primary-page-bg;
+  color: $dark-bg-button-disabled-color;
+  box-shadow: 0 0 0 2px $dark-bg-button-disabled-color;
+  pointer-events: none;
 }
