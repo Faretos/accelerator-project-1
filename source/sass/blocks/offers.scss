@@ -62,7 +62,7 @@
 }
 
 .offers__text-content-wrapper {
-  padding: 31px 30px;
+  padding: 31px 30px 25px;
   background-color: $offers-accent-bg;
 
   @media (min-width: $tablet-width) {
@@ -70,13 +70,13 @@
     flex-direction: column;
     align-items: flex-start;
     min-height: 462px;
-    padding: 40px 25px 45px;
+    padding: 40px 15px 35px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 460px;
-    padding: 40px 45px 45px;
+    padding: 40px 35px 35px;
   }
 }
 
@@ -91,11 +91,13 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 20px;
+    padding: 0 10px;
     font-size: 24px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0 10px;
     font-size: 26px;
     line-height: 26px;
   }
@@ -104,6 +106,7 @@
 .offers__text-content-wrapper span {
   display: block;
   margin: 0 0 28px;
+  padding: 0 10px;
   font-family: $primary-font;
   font-size: 64px;
   line-height: 64px;
@@ -118,7 +121,7 @@
 }
 
 .offers__text-content-wrapper p {
-  margin: 0 0 25px;
+  margin: 0 0 19px;
   padding: 0;
   font-family: $primary-font;
   font-size: 16px;
@@ -128,13 +131,16 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 auto;
+    padding: 0 10px;
     font-size: 18px;
     line-height: 24px;
   }
 }
 
 .offers__text-content-wrapper a {
+  display: inline-block;
   position: relative;
+  padding: 10px;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 14px;
@@ -142,12 +148,14 @@
   color: $secondary-text-color;
   text-decoration: none;
   text-transform: uppercase;
+  box-shadow: 0 0 0 1px transparent;
 
   &::after {
-    @include pseudo (100%, 1px);
+    @include pseudo (79%, 1px);
 
-    bottom: -4px;
-    left: 0;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
     background-color: $secondary-text-color;
   }
 
@@ -155,7 +163,8 @@
     margin-top: 10px;
 
     &::after {
-      bottom: -5px;
+      bottom: 5px;
+      left: 50%;
     }
   }
 }
@@ -185,7 +194,7 @@
 .offers__offer-wrapper {
   position: relative;
   margin-bottom: 30px;
-  padding: 21px 20px;
+  padding: 21px 10px 15px;
   z-index: 1;
   border: 7px solid transparent;
   border-image: linear-gradient(145deg, #d10a42 12%, #00359f 100%) 1;
@@ -195,7 +204,7 @@
 
     width: 324px;
     min-height: 188px;
-    padding: 20px 20px 25px;
+    padding: 20px 10px 15px;
     text-align: left;
   }
 
@@ -212,7 +221,7 @@
 
 .offers__offer-wrapper h3 {
   margin: 0 0 20px;
-  padding: 0;
+  padding: 0 10px;
   font-family: $primary-font;
   font-size: 22px;
   line-height: 22px;
@@ -227,8 +236,8 @@
 }
 
 .offers__offer-wrapper p {
-  margin: 0 0 16px;
-  padding: 0;
+  margin: 0 0 10px;
+  padding: 0 10px;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 22px;
@@ -243,7 +252,9 @@
 }
 
 .offers__offer-wrapper a {
+  display: inline-block;
   position: relative;
+  padding: 10px;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 14px;
@@ -251,12 +262,14 @@
   color: $primary-text-color;
   text-decoration: none;
   text-transform: uppercase;
+  box-shadow: 0 0 0 1px transparent;
 
   &::after {
-    @include pseudo(100%, 1px);
+    @include pseudo(79%, 1px);
 
-    bottom: -4px;
-    left: 0;
+    bottom: 6px;
+    left: 50%;
+    transform: translate(-50%, 0);
     background-color: $primary-text-color;
   }
 
@@ -264,7 +277,73 @@
     margin-top: 10px;
 
     &::after {
-      bottom: -5px;
+      bottom: 5px;
     }
   }
+}
+
+.offers__text-content-wrapper a:hover {
+  opacity: 0.8;
+
+  &::after {
+    opacity: 0.8;
+  }
+}
+
+.offers__text-content-wrapper a:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px $secondary-text-color;
+
+  &::after {
+    display: none;
+  }
+}
+
+.offers__text-content-wrapper a:active {
+  opacity: 0.3;
+  box-shadow: none;
+
+  &::after {
+    display: block;
+    opacity: 0.3;
+  }
+}
+
+// Добавить класс к обертке, чтобы отключить ссылку
+.offers__text-content-wrapper.disabled a {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.offers__offer-wrapper a:hover {
+  opacity: 0.8;
+
+  &::after {
+    opacity: 0.8;
+  }
+}
+
+.offers__offer-wrapper a:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px  $primary-text-color;
+
+  &::after {
+    display: none;
+  }
+}
+
+.offers__offer-wrapper a:active {
+  opacity: 0.3;
+  box-shadow: none;
+
+  &::after {
+    display: block;
+    opacity: 0.3;
+  }
+}
+
+// Добавить класс к обертке, чтобы отключить ссылку
+.offers__offer-wrapper.disabled a {
+  pointer-events: none;
+  opacity: 0.3;
 }

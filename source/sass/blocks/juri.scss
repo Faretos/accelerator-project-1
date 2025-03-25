@@ -62,7 +62,8 @@
 
 .juri__prev-button {
   display: none;
-  color: #102654;
+  color: $primary-text-color;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -98,7 +99,8 @@
 
 .juri__next-button {
   display: none;
-  color: #102654;
+  color: $primary-text-color;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -129,5 +131,127 @@
       top: 135px;
       left: 27px;
     }
+  }
+}
+
+.juri__prev-button:hover {
+  &::after {
+    @include pseudo(50px, 50px);
+
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 128px;
+    left: -8px;
+    z-index: -1;
+  }
+}
+
+.juri__next-button:hover {
+  &::after {
+    @include pseudo(50px, 50px);
+
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 128px;
+    right: -10px;
+    z-index: -1;
+  }
+}
+
+.juri__prev-button:focus {
+  outline: none;
+
+  &::after {
+    @include pseudo(50px, 50px);
+
+    outline: none;
+    background-color: $price-shadow-text-color;
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 128px;
+    left: -8px;
+    z-index: -1;
+  }
+}
+
+.juri__next-button:focus {
+  outline: none;
+
+  &::after {
+    @include pseudo(50px, 50px);
+
+    outline: none;
+    background-color: $price-shadow-text-color;
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 128px;
+    right: -10px;
+    z-index: -1;
+  }
+}
+
+.juri__prev-button:active {
+  outline: none;
+
+  &::before {
+    border-top: 1px solid $secondary-text-color;
+    border-right: 1px solid $secondary-text-color;
+  }
+
+  &::after {
+    @include pseudo(50px, 50px);
+
+    outline: none;
+    background-color: $primary-text-color;
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 128px;
+    left: -8px;
+    z-index: -1;
+  }
+}
+
+.juri__next-button:active {
+  outline: none;
+
+  &::before {
+    border-top: 1px solid $secondary-text-color;
+    border-right: 1px solid $secondary-text-color;
+  }
+
+  &::after {
+    @include pseudo(50px, 50px);
+
+    outline: none;
+    background-color: $primary-text-color;
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 128px;
+    right: -10px;
+    z-index: -1;
+  }
+}
+
+.juri__prev-button.disabled {
+  pointer-events: none;
+
+  &::before {
+    opacity: 0.3;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.juri__next-button.disabled {
+  pointer-events: none;
+
+  &::before {
+    opacity: 0.3;
+  }
+
+  &::after {
+    display: none;
   }
 }

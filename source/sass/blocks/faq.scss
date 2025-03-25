@@ -17,7 +17,8 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 260px 860px;
-    gap: 43px 40px;
+    grid-template-rows: 104px 1fr;
+    gap: 0 40px;
     align-items: flex-start;
     width: 1366px;
     min-height: 743px;
@@ -77,6 +78,7 @@
   background-color: transparent;
   color: $primary-text-color;
   border: 1px solid $faq-tabs-buttons-border-color;
+  cursor: pointer;
 
   &--active {
     color: $secondary-text-color;
@@ -322,5 +324,79 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+}
+
+.faq__button:not(.faq__button--active):hover,
+.faq__button:not(.faq__button--active):focus {
+  outline: none;
+  border: 1px solid $primary-text-color;
+}
+
+.faq__button--active:focus {
+  outline: none;
+}
+
+.faq__button:active {
+  background: $button-faq-gradient-bg;
+  color: $secondary-text-color;
+}
+
+.faq__button:disabled,
+.faq__button.disabled {
+  pointer-events: none;
+  color: $play-button-focus-color;
+  background: transparent;
+  border: 1px solid rgba(16, 38, 84, 0.2);
+}
+
+.faq__accordion-tab-button:hover {
+  background-color: $phone-focus-color;
+
+  &::before {
+    background-color: $secondary-text-color;
+  }
+
+  &::after {
+    background-color: $secondary-text-color;
+  }
+}
+
+.faq__accordion-tab-button:focus {
+  outline: none;
+  background-color: $faq-focus-button-color;
+
+  &::before {
+    background-color: $secondary-text-color;
+  }
+
+  &::after {
+    background-color: $secondary-text-color;
+  }
+}
+
+.faq__accordion-tab-button:active {
+  background-color: $phone-focus-color;
+
+  &::before {
+    background-color: $secondary-text-color;
+  }
+
+  &::after {
+    background-color: $secondary-text-color;
+  }
+}
+
+.faq__accordion-tab-button:disabled,
+.faq__accordion-tab-button.disabled {
+  opacity: 0.3;
+  background-color: $secondary-text-color;
+
+  &::before {
+    background-color: $primary-text-color;
+  }
+
+  &::after {
+    background-color: $primary-text-color;
   }
 }

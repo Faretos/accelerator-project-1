@@ -225,3 +225,26 @@
 .games__image {
   display: block;
 }
+
+.games__link:hover {
+  background-color: $primary-page-bg;
+  color: $price-text-color;
+}
+
+.games__link:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: $price-text-color;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.games__link:active {
+  background-color: $primary-page-bg;
+  color: $phone-active-color;
+  border: 2px solid $primary-page-bg;
+}
+
+.games__link.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

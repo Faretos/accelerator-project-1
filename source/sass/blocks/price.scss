@@ -184,10 +184,12 @@
   grid-template-columns: 1fr;
   row-gap: 18px;
   width: 290px;
-  padding: 51px 42px 50px;
+  padding: 44px 37px 45px;
   background-color: $primary-page-bg;
   text-align: center;
   align-items: center;
+  z-index: 1;
+  border: 7px solid $primary-page-bg;
 
   &:not(:last-child) {
     margin-bottom: 35px;
@@ -195,7 +197,7 @@
 
   @media (min-width: $tablet-width) {
     width: 380px;
-    padding: 65px;
+    padding: 58px 60px 60px;
     row-gap: 22px;
 
     &:not(:last-child) {
@@ -266,7 +268,7 @@
     mask-size: 100%;
     background-color: $primary-text-color;
     top: 20px;
-    right: 37px;
+    right: 35px;
   }
 
   @media (min-width: $tablet-width) {
@@ -278,7 +280,7 @@
       width: 30px;
       height: 42px;
       top: 24px;
-      right: 42px;
+      right: 40px;
     }
   }
 
@@ -286,42 +288,42 @@
     padding-right: 45px;
 
     &::after {
-      right: 32px;
+      right: 30px;
     }
   }
 }
 
 .price__programm-item-price-shaddow {
   position: absolute;
-  top: 129px;
-  left: 64px;
+  top: 182px;
+  left: 50%;
   font-family: $primary-font;
   font-size: 80px;
   line-height: 150%;
   font-weight: 700;
   color: $price-shadow-text-color;
   opacity: 0.48;
+  transform: translate(-50%, -50%);
 
   @media (min-width: $tablet-width) {
-    top: 156px;
-    left: 89px;
+    top: 224px;
     font-size: 100px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 147px;
-    left: 78px;
+    top: 216px;
   }
 }
 
 .price__programm-item-button {
+  margin-top: 2px;
   padding: 25px 47px;
   font-family: $primary-font;
   font-size: 12px;
   line-height: 12px;
   font-weight: 700;
   color: $primary-text-color;
-  border: 2px solid $primary-text-color;
+  box-shadow: 0 0 0 2px $primary-text-color;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -405,4 +407,33 @@
       bottom: -6px;
     }
   }
+}
+
+.price__programm-item:hover,
+.price__programm-item:focus,
+.price__programm-item:focus-within {
+  border-image: $dark-bg-button-focus-bg-color 1;
+}
+
+.price__programm-item:hover .price__programm-item-button,
+.price__programm-item:focus .price__programm-item-button,
+.price__programm-item:focus-within .price__programm-item-button {
+  color: $secondary-text-color;
+  background: $button-faq-gradient-bg;
+  box-shadow: none;
+  outline: none;
+}
+
+.price__programm-item:active {
+  opacity: 0.3;
+}
+
+.price__programm-item.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.price__programm-item-button.disabled {
+  pointer-events: none;
+  opacity: 0.3;
 }

@@ -110,22 +110,25 @@
 }
 
 .about__video-wrapper-wrapper {
+  position: relative;
   width: 320px;
   height: 170px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    bottom: 36px;
-    left: 249px;
     width: 270px;
     height: 170px;
     overflow: hidden;
     position: absolute;
+
+    bottom: -49px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 125px;
-    left: 503px;
+    bottom: 10px;
     width: 360px;
     height: 230px;
   }
@@ -196,7 +199,7 @@
   border: none;
   background: $button-gradient-bg;
   position: absolute;
-  bottom: 99px;
+  bottom: 59px;
   left: 134px;
   z-index: 3;
   cursor: pointer;
@@ -243,6 +246,25 @@
       top: 28px;
       left: 32px;
     }
+  }
+}
+
+.about iframe {
+  position: absolute;
+  bottom: -45px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    bottom: -49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 10px;
   }
 }
 

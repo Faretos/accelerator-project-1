@@ -193,3 +193,121 @@
     }
   }
 }
+
+.reviews__prev-slide:hover {
+  &::after {
+    @include pseudo(50px, 50px);
+
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 135px;
+    left: 33px;
+    z-index: -1;
+  }
+}
+
+.reviews__next-slide:hover {
+  &::after {
+    @include pseudo(50px, 50px);
+
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 135px;
+    left: 69px;
+    z-index: -1;
+  }
+}
+
+.reviews__prev-slide:focus {
+  outline: none;
+
+  &::after {
+    @include pseudo(50px, 50px);
+
+    background-color: $price-shadow-text-color;
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 135px;
+    left: 33px;
+    z-index: -1;
+  }
+}
+
+.reviews__next-slide:focus {
+  outline: none;
+
+  &::after {
+    @include pseudo(50px, 50px);
+
+    background-color: $price-shadow-text-color;
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 135px;
+    left: 69px;
+    z-index: -1;
+  }
+}
+
+.reviews__prev-slide:active {
+  outline: none;
+
+  &::before {
+    border-top: 1px solid $secondary-text-color;
+    border-right: 1px solid $secondary-text-color;
+  }
+
+  &::after {
+    @include pseudo(50px, 50px);
+
+    background-color: $primary-text-color;
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 135px;
+    left: 33px;
+    z-index: -1;
+  }
+}
+
+.reviews__next-slide:active {
+  outline: none;
+
+  &::before {
+    border-top: 1px solid $secondary-text-color;
+    border-right: 1px solid $secondary-text-color;
+  }
+
+  &::after {
+    @include pseudo(50px, 50px);
+
+    background-color: $primary-text-color;
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 135px;
+    left: 69px;
+    z-index: -1;
+  }
+}
+
+.reviews__prev-slide.disabled {
+  pointer-events: none;
+
+  &::before {
+    opacity: 0.3;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.reviews__next-slide.disabled {
+  pointer-events: none;
+
+  &::before {
+    opacity: 0.3;
+  }
+
+  &::after {
+    display: none;
+  }
+}
