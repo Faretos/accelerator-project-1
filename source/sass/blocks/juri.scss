@@ -303,7 +303,9 @@
   }
 }
 
-.juri__card:hover .juri__description {
+.juri__card:hover .juri__description,
+.juri__card:focus .juri__description {
+  outline: none;
   transform: translateY(0);
   background-color: rgba(16, 38, 84, 0.89);
 }
