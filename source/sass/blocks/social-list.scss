@@ -67,3 +67,39 @@
     left: 5px;
   }
 }
+
+.social-list__link:hover {
+  background-color: $faq-focus-button-color;
+
+  &::before {
+    background-color: $primary-page-bg;
+  }
+}
+
+.social-list__link:focus {
+  outline: none;
+  background-color: $price-text-color;
+
+  &::before {
+    background-color: $primary-page-bg;
+  }
+}
+
+.social-list__link:active {
+  outline: none;
+  background-color: $price-text-color;
+
+  &::before {
+    background-color: $primary-text-color;
+  }
+}
+
+.social-list__link.disabled {
+  pointer-events: none;
+  outline: none;
+  background-color: $social-link-disabled-color;
+
+  &::before {
+    background-color: $footer-bg;
+  }
+}
