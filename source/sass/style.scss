@@ -2,14 +2,34 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "../vendor/swiper/swiper-bundle";
 
-/* GLOBAL */
+// COMMON
 @import "./common/variables";
 @import "./common/mixins";
 @import "./common/global";
 @import "./common/fonts";
+
+/* BLOCKS */
+@import "./blocks/visually-hidden";
+@import "./blocks/break";
+@import "./blocks/list-style-reset";
 @import "./blocks/title-reset";
 @import "./blocks/text-offset-reset";
+@import "./blocks/button";
 @import "./blocks/page";
 @import "./blocks/main-container";
 @import "./blocks/hero";
+@import "./blocks/about";
+@import "./blocks/price";
+@import "./blocks/games";
+@import "./blocks/juri";
+@import "./blocks/features";
+@import "./blocks/offers";
+@import "./blocks/faq";
+@import "./blocks/reviews";
+@import "./blocks/contacts-info";
+@import "./blocks/application-form";
+@import "./blocks/contacts";
+@import "./blocks/footer";
+@import "./blocks/social-list";

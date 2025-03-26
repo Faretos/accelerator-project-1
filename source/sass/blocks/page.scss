@@ -5,7 +5,12 @@
 }
 
 .page__body {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 22px;
+  color: $primary-text-color;
   background-color: $primary-page-bg;
   min-width: 320px;
   min-height: 100%;
+  box-sizing: border-box;
 }
