@@ -1,36 +1,12 @@
 import Swiper from '../vendor/swiper/swiper';
 import { Navigation} from '../vendor/swiper/modules';
 
-
-const swiperOne = new Swiper('.juri__list', {
-  modules: [Navigation],
-
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 1,
-  spaceBetween: 10,
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 40,
-    },
-    1366: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    },
-  },
-});
-
-const swiperTwo = new Swiper('.reviews__reviews-wrapper', {
+const reviewsSwiper = new Swiper('.reviews__reviews-wrapper', {
   modules: [Navigation],
 
   direction: 'horizontal',
   loop: false,
+  autoHeight: true,
   slidesPerView: 1,
   spaceBetween: 10,
 
@@ -38,6 +14,7 @@ const swiperTwo = new Swiper('.reviews__reviews-wrapper', {
     nextEl: '.reviews__next-slide',
     prevEl: '.reviews__prev-slide',
   },
+  allowTouchMove: window.innerWidth < 1366,
   on: {
     slideChange: function () {
       document.querySelector('.reviews__prev-slide').classList.remove('disabled');
@@ -57,4 +34,12 @@ const swiperTwo = new Swiper('.reviews__reviews-wrapper', {
       spaceBetween: 40,
     },
   },
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth < 1366) {
+    reviewsSwiper.allowTouchMove = true;
+  } else {
+    reviewsSwiper.allowTouchMove = false;
+  }
 });

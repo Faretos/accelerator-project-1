@@ -5,18 +5,18 @@
 .footer__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 40px 5px 35px;
+  padding: 40px 5px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     width: 768px;
-    padding: 37px 45px 38px;
+    padding: 37px 45px 36px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1366px;
-    padding: 30px 100px 33px 103px;
+    padding: 30px 100px 32px 103px;
     gap: 0 157px;
   }
 }
@@ -51,7 +51,7 @@
 .footer__nav-list {
   display: grid;
   width: 290px;
-  margin-bottom: 5px;
+  margin-bottom: 9px;
   grid-template-columns: repeat(4, 1fr);
   gap: 0 5px;
   flex-wrap: wrap;
@@ -144,7 +144,7 @@
 
 .footer__link {
   position: relative;
-  padding: 10px;
+  padding: 9px;
   display: block;
   font-family: $primary-font;
   font-size: 14px;
@@ -153,6 +153,10 @@
   color: $secondary-text-color;
   text-decoration: none;
   border: 1px solid transparent;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px;
+  }
 }
 
 .footer__link:hover {

@@ -409,31 +409,31 @@
   }
 }
 
-.price__programm-item:hover,
-.price__programm-item:focus,
-.price__programm-item:focus-within {
-  border-image: $dark-bg-button-focus-bg-color 1;
-}
-
-.price__programm-item:hover .price__programm-item-button,
-.price__programm-item:focus .price__programm-item-button,
-.price__programm-item:focus-within .price__programm-item-button {
+.price__programm-item-button:hover {
   color: $secondary-text-color;
   background: $button-faq-gradient-bg;
   box-shadow: none;
+}
+
+.price__programm-item-button:focus {
+  color: $secondary-text-color;
+  background: $dark-bg-button-focus-bg-color;
+  box-shadow: 0 0 0 2px $dark-bg-button-focus-border-color;
   outline: none;
 }
 
-.price__programm-item:active {
-  opacity: 0.3;
+.price__programm-item:has(.price__programm-item-button:hover),
+.price__programm-item:has(.price__programm-item-button:focus) {
+  border-image: $dark-bg-button-focus-bg-color 1;
 }
 
-.price__programm-item.disabled {
-  pointer-events: none;
-  opacity: 0.3;
+.price__programm-item-button:active {
+  color: $dark-bg-button-active-text-color;
 }
 
 .price__programm-item-button.disabled {
+  background-color: $primary-page-bg;
+  color: $dark-bg-button-disabled-color;
+  box-shadow: 0 0 0 2px $dark-bg-button-disabled-color;
   pointer-events: none;
-  opacity: 0.3;
 }

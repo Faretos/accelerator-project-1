@@ -12,17 +12,17 @@
 
   width: 320px;
   margin: 0 auto;
-  padding: 71px 15px 70px;
+  padding: 71px 15px 72px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 60px 164px;
+    padding: 60px 164px 62px;
   }
 
   @media (min-width: $desktop-width) {
     width: 683px;
     margin: 0 0 0 auto;
-    padding: 60px 103px;
+    padding: 60px 103px 62px;
   }
 }
 
@@ -127,7 +127,7 @@
   display: block;
   justify-self: center;
   width: 100%;
-  margin: 1px 0 0;
+  margin: 3px 0 0;
   padding: 22px 0;
   font-family: $primary-font;
   font-size: 12px;
@@ -142,7 +142,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
-    margin: 0;
+    margin: 2px 0 0;
     padding: 26px 0 24px;
   }
 }

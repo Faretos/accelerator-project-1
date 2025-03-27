@@ -167,6 +167,7 @@
   line-height: 12px;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
   color: $secondary-text-color;
   background-color: transparent;
   box-shadow: 0 0 0 2px $primary-page-bg;
@@ -242,8 +243,7 @@
   color: $dark-bg-button-active-text-color;
 }
 
-.hero__button.disabled,
-.hero__button:disabled {
+.hero__button.disabled {
   background-color: $primary-page-bg;
   color: $dark-bg-button-disabled-color;
   box-shadow: 0 0 0 2px $dark-bg-button-disabled-color;

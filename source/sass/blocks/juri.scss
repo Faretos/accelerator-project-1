@@ -72,6 +72,7 @@
   padding: 42px 40px 50px;
   transition: transform 0.3s ease, background-color;
   transform: translateY(100%);
+  box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
 }
 
 .juri__name {
@@ -81,6 +82,7 @@
   line-height: 22px;
   font-weight: 400;
   color: $secondary-text-color;
+  transform: translateY(-88px);
 }
 
 .juri__subtitle {
@@ -308,4 +310,9 @@
   outline: none;
   transform: translateY(0);
   background-color: rgba(16, 38, 84, 0.89);
+}
+
+.juri__card:hover .juri__name,
+.juri__card:focus .juri__name {
+  transform: translateY(0);
 }
