@@ -70,16 +70,15 @@
       <div class="about__video-wrapper-wrapper">
         <div class="about__video-wrapper">
           <span class="visually-hidden">Видеоплеер</span>
+
+          <!--  IFRAME, который подставляется в about__video-wrapper -->
+          <iframe id="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw?si=Inu0BNBB-ksox3bG" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+
         </div>
         <button class="about__play-video-button" type="button">
           <span class="visually-hidden">Запустить видео</span>
         </button>
       </div>
-
-      <!--  IFRAME, который подставляется в about__video-wrapper -->
-      <iframe id="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw?si=Inu0BNBB-ksox3bG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      <!-- --- -->
-
     </section>
     <!-- PRICE -->
     <section class="price" data-test="price" id="price">
@@ -820,7 +819,7 @@
       </div>
     </div>
   </footer>
-  <script type="module" src="./js/main.js" defer></script>
+  <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
