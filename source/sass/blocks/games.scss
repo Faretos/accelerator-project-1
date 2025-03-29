@@ -28,16 +28,17 @@
   background-color: $games-text-bg-color;
   color: $secondary-text-color;
   gap: 10px 37px;
+  align-items: flex-start;
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    gap: 0 3px;
+    gap: 9px 3px;
   }
 
   @media (min-width: $desktop-width) {
     width: 500px;
     padding: 60px 80px;
-    gap: 0 77px;
+    gap: 25px 77px;
   }
 }
 
@@ -63,14 +64,17 @@
   flex-wrap: wrap;
   grid-column: 2 / 3;
   grid-row: 1 / 3;
+  gap: 4px 0;
 
   @media (min-width: $tablet-width) {
     min-height: 134px;
     grid-row: 1 / 3;
+    gap: 5px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 28px;
+    margin-bottom: 18px;
+    gap: 11px 0;
   }
 }
 
@@ -86,7 +90,7 @@
   &::after {
     @include pseudo (56px, 1px);
 
-    bottom: 2px;
+    bottom: -3px;
     background-color: $primary-page-bg;
   }
 
@@ -97,14 +101,14 @@
 
     &::after {
       width: 100px;
-      bottom: 2px;
+      bottom: -2px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::after {
       width: 95px;
-      bottom: 7px;
+      bottom: -6px;
     }
   }
 }
@@ -116,8 +120,6 @@
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 6px;
-
     &--time {
       margin-bottom: 9px;
       align-self: center;
@@ -128,6 +130,10 @@
     font-size: 40px;
     line-height: 40px;
     align-self: auto;
+
+    &--time {
+      margin: 2px 0 0;
+    }
   }
 }
 
@@ -145,6 +151,10 @@
     font-size: 14px;
     line-height: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 9px 6px;
+  }
 }
 
 .games__time {
@@ -159,7 +169,7 @@
   &::after {
     @include pseudo (56px, 1px);
 
-    bottom: 2px;
+    bottom: -4px;
     background-color: $primary-page-bg;
   }
 
@@ -170,7 +180,14 @@
 
     &::after {
       width: 100px;
-      bottom: 2px;
+      bottom: -1px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 95px;
+      bottom: -7px;
     }
   }
 }
@@ -196,7 +213,8 @@
 }
 
 .games__link {
-  padding: 22px 50px;
+  width: 100%;
+  padding: 22px 0;
   grid-column: 1 / 3;
   font-family: $primary-font;
   font-size: 12px;

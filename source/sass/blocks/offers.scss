@@ -62,7 +62,7 @@
 }
 
 .offers__text-content-wrapper {
-  padding: 31px 30px 25px;
+  padding: 31px 30px;
   background-color: $offers-accent-bg;
 
   @media (min-width: $tablet-width) {
@@ -70,7 +70,7 @@
     flex-direction: column;
     align-items: flex-start;
     min-height: 462px;
-    padding: 40px 15px 35px;
+    padding: 40px 25px 45px;
     text-align: left;
   }
 
@@ -91,7 +91,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 20px;
-    padding: 0 10px;
     font-size: 24px;
     line-height: 24px;
   }
@@ -106,7 +105,6 @@
 .offers__text-content-wrapper span {
   display: block;
   margin: 0 0 28px;
-  padding: 0 10px;
   font-family: $primary-font;
   font-size: 64px;
   line-height: 64px;
@@ -121,7 +119,7 @@
 }
 
 .offers__text-content-wrapper p {
-  margin: 0 0 19px;
+  margin: 0 0 25px;
   padding: 0;
   font-family: $primary-font;
   font-size: 16px;
@@ -130,17 +128,21 @@
   color: $secondary-text-color;
 
   @media (min-width: $tablet-width) {
+    max-height: 189px;
+    overflow-y: auto;
     margin: 0 0 auto;
-    padding: 0 10px;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 185px;
   }
 }
 
 .offers__text-content-wrapper a {
   display: inline-block;
   position: relative;
-  padding: 10px;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 14px;
@@ -148,12 +150,11 @@
   color: $secondary-text-color;
   text-decoration: none;
   text-transform: uppercase;
-  box-shadow: 0 0 0 1px transparent;
 
   &::after {
-    @include pseudo (79%, 1px);
+    @include pseudo (100%, 1px);
 
-    bottom: 5px;
+    bottom: -5px;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: $secondary-text-color;
@@ -163,7 +164,7 @@
     margin-top: 10px;
 
     &::after {
-      bottom: 5px;
+      bottom: -5px;
       left: 50%;
     }
   }
@@ -291,8 +292,8 @@
 }
 
 .offers__text-content-wrapper a:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px $secondary-text-color;
+  outline: 1px solid $secondary-text-color;
+  outline-offset: 5px;
 
   &::after {
     display: none;
@@ -301,7 +302,6 @@
 
 .offers__text-content-wrapper a:active {
   opacity: 0.3;
-  box-shadow: none;
 
   &::after {
     display: block;
