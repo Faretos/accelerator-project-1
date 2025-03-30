@@ -9,6 +9,10 @@
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180.png" sizes="180x180">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="./favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180.png" sizes="180x180">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/roboto-condesed/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condesed/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condesed/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -19,11 +23,15 @@
 
 <body class="page__body">
   <!-- MAIN -->
+  <!-- MAIN -->
   <main class="main-container">
     <!-- HERO -->
-    <section class="hero" data-test="hero">
+    <section class="hero" data-test="hero" id="hero">
       <header class="hero__header">
         <picture>
+          <source type="image/svg+xml" media="(min-width: 1366px)" srcset="/__spritemap#sprite-supergym-logo-mobile-view" width="130" height="26">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-supergym-logo-mobile-view" width="110" height="22">
+          <img class="hero__logo" src="/__spritemap#sprite-supergym-logo-mobile-view" width="100" height="20" alt="Логотип SUPERGYM">
           <source type="image/svg+xml" media="(min-width: 1366px)" srcset="/__spritemap#sprite-supergym-logo-mobile-view" width="130" height="26">
           <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-supergym-logo-mobile-view" width="110" height="22">
           <img class="hero__logo" src="/__spritemap#sprite-supergym-logo-mobile-view" width="100" height="20" alt="Логотип SUPERGYM">
@@ -38,7 +46,7 @@
           Групповые занятия
           Кардио-зона
         </p>
-        <button class="hero__button button" type="button">Купить абонемент</button>
+        <a class="hero__button button" href="#price">Купить абонемент</a>
         <div class="hero__image-wrapper">
           <picture>
             <source type="image/webp" media="(min-width: 1366px)" srcset="./img/hero/hero-coach-desktop@1x.webp, ./img/hero/hero-coach-desktop@1x.webp 2x" width="500" height="524">
@@ -51,7 +59,7 @@
       </div>
     </section>
     <!-- ABOUT -->
-    <section class="about" data-test="about">
+    <section class="about" data-test="about" id="about">
       <div class="about__text-wrapper">
         <h2 class="about__title title-reset">Тренажёрный зал</h2>
         <span class="about__sub-title text-offset-reset">Просторный зал площадью 900 кв/м</span>
@@ -70,6 +78,7 @@
       <div class="about__video-wrapper-wrapper">
         <div class="about__video-wrapper">
           <span class="visually-hidden">Видеоплеер</span>
+
         </div>
         <button class="about__play-video-button" type="button">
           <span class="visually-hidden">Запустить видео</span>
@@ -78,11 +87,10 @@
 
       <!--  IFRAME, который подставляется в about__video-wrapper -->
       <iframe id="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw?si=Inu0BNBB-ksox3bG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-      <!-- --- -->
 
     </section>
     <!-- PRICE -->
-    <section class="price" data-test="price">
+    <section class="price" data-test="price" id="price">
       <div class="price__wrapper">
         <h2 class="price__title title-reset">Абонементы</h2>
         <ul class="price__offers-list list-style-reset">
@@ -177,7 +185,7 @@
       </div>
     </section>
     <!-- GAMES -->
-    <section class="games" data-test="games">
+    <section class="games" data-test="games" id="games">
       <div class="games__wrapper">
         <div class="games__text-content-wrapper">
           <h2 class="games__title title-reset">SUPER GAMES</h2>
@@ -245,7 +253,7 @@
                 <span class="juri__subtitle">CrossFit</span>
                 <ul class="juri__qualification-list list-style-reset">
                   <li class="juri__qualification-item">Certified Level 2 Trainer</li>
-                  <li class="juri__qualification-item">Победитель чемпионата Санкт-Петербурга по CrossFit</li>
+                  <li class="juri__qualification-item">Победитель чемпионата CПБFIT по CrossFit</li>
                   <li class="juri__qualification-item">Опыт — 2 года</li>
                 </ul>
               </div>
@@ -325,7 +333,7 @@
                 <span class="juri__subtitle">CrossFit</span>
                 <ul class="juri__qualification-list list-style-reset">
                   <li class="juri__qualification-item">Certified Level 2 Trainer</li>
-                  <li class="juri__qualification-item">Победитель чемпионата Санкт-Петербурга по CrossFit</li>
+                  <li class="juri__qualification-item">Победитель чемпионата CПБFIT по CrossFit</li>
                   <li class="juri__qualification-item">Опыт — 2 года</li>
                 </ul>
               </div>
@@ -381,7 +389,7 @@
       </div>
     </section>
     <!-- FEATURES -->
-    <section class="features" data-test="features">
+    <section class="features" data-test="features" id="features">
       <div class="features__wrapper">
         <h2 class="features__title title-reset">Наши преимущества</h2>
         <ul class="features__list list-style-reset">
@@ -428,7 +436,7 @@
       </div>
     </section>
     <!-- OFFERS -->
-    <section class="offers" data-test="offers">
+    <section class="offers" data-test="offers" id="offers">
       <div class="offers__wrapper">
         <h2 class="offers__title title-reset">Акции</h2>
         <div class="offers__accent-content-wrapper">
@@ -465,7 +473,7 @@
       </div>
     </section>
     <!-- FAQ -->
-    <section class="faq" data-test="faq">
+    <section class="faq" data-test="faq" id="faq">
       <div class="faq__wrapper">
         <h2 class="faq__title title-reset">Вопросы и ответы</h2>
         <div class="faq__buttons">
@@ -669,7 +677,7 @@
       </div>
     </section>
     <!-- REVIEWS -->
-    <section class="reviews" data-test="reviews">
+    <section class="reviews" data-test="reviews" id="reviews">
       <div class="reviews__wrapper">
         <h2 class="reviews__title title-reset">Отзывы</h2>
         <div class="reviews__reviews-wrapper swiper">
@@ -715,21 +723,25 @@
       </div>
     </section>
     <!-- CONTACTS-INFO -->
-    <section class="contacts-info" data-test="form">
+    <section class="contacts-info" data-test="form" id="contacts-info">
       <!-- FORM -->
       <div class="application-form">
         <div class="application-form__wrapper">
           <h2 class="application-form__title title-reset">Бесплатное занятие</h2>
           <form class="application-form__form" action="https://echo.htmlacademy.ru/" id="application-form" method="post" novalidate>
+            <!-- NAME -->
             <div class="application-form__form-name">
               <label class="visually-hidden" for="name">Укажите свое имя</label>
               <input class="application-form__input" placeholder="Имя" type="text" name="name" id="name" pattern="[A-Za-zА-Яа-яЁё\s]+" required>
+              <!-- ERROR MESAGES -->
               <span class="application-form__form-error-text" id="name-error-text">Недопустимое имя</span>
               <span class="application-form__form-error-text" id="name-required-text">Поле необходимо заполнить</span>
             </div>
+            <!-- PHONE -->
             <div class="application-form__form-phone">
               <label class="visually-hidden" for="phone">Укажите свой телефон</label>
               <input class="application-form__input" placeholder="Телефон" type="tel" name="phone" id="phone" pattern="^+7\d{10}$" minlength="12" maxlength="12" required>
+              <!-- ERROR MESAGES -->
               <span class="application-form__form-error-text" id="phone-error-text">Недопустимый номер телефона</span>
               <span class="application-form__form-error-text" id="phone-required-text">Поле необходимо заполнить</span>
             </div>
@@ -752,11 +764,11 @@
             </li>
             <li class="contacts__item contacts__item--phone">
               <h3 class="contacts__item-title title-reset">Телефон:</h3>
-              <a class="contacts__item-phone" href="tel:+78005555555">8 800 555-55-55</a>
+              <a class="contacts__item-phone-link" href="tel:+78005555555">8 800 555-55-55</a>
             </li>
             <li class="contacts__item contacts__item--email">
               <h3 class="contacts__item-title title-reset">Email:</h3>
-              <a class="contacts__item-email" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+              <a class="contacts__item-email-link" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
             </li>
           </ul>
         </div>
@@ -782,10 +794,10 @@
               <a class="footer__link" href="#">Услуги</a>
             </li>
             <li class="footer__nav-item footer__nav-item--subscribe">
-              <a class="footer__link" href="#">Абонементы</a>
+              <a class="footer__link" href="#price">Абонементы</a>
             </li>
             <li class="footer__nav-item footer__nav-item--offers">
-              <a class="footer__link" href="#">Акции</a>
+              <a class="footer__link" href="#offers">Акции</a>
             </li>
             <li class="footer__nav-item footer__nav-item--juri">
               <a class="footer__link" href="#">Тренеры</a>
@@ -816,7 +828,7 @@
       </div>
     </div>
   </footer>
-  <script type="module" src="./js/main.js" defer></script>
+  <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
