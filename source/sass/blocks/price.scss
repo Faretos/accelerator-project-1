@@ -181,11 +181,7 @@
 .price__programm-item {
   position: relative;
   display: grid;
-<<<<<<< HEAD
   grid-template-columns: 202px;
-=======
-  grid-template-columns: 1fr;
->>>>>>> origin/main
   row-gap: 18px;
   width: 290px;
   padding: 44px 37px 45px;
@@ -200,10 +196,7 @@
   }
 
   @media (min-width: $tablet-width) {
-<<<<<<< HEAD
     grid-template-columns: 246px;
-=======
->>>>>>> origin/main
     width: 380px;
     padding: 58px 60px 60px;
     row-gap: 22px;
@@ -214,10 +207,7 @@
   }
 
   @media (min-width: $desktop-width) {
-<<<<<<< HEAD
     grid-template-columns: 226px;
-=======
->>>>>>> origin/main
     width: 360px;
     row-gap: 17px;
 
@@ -270,11 +260,8 @@
   font-weight: 700;
   color: $price-text-color;
   z-index: 2;
-<<<<<<< HEAD
   overflow-wrap: break-word;
   word-wrap: break-word;
-=======
->>>>>>> origin/main
 
   &::after {
     @include pseudo (24px, 33px);
@@ -284,11 +271,7 @@
     mask-position: center;
     mask-size: 100%;
     background-color: $primary-text-color;
-<<<<<<< HEAD
     bottom: 19px;
-=======
-    top: 20px;
->>>>>>> origin/main
     right: 35px;
   }
 
@@ -300,11 +283,7 @@
     &::after {
       width: 30px;
       height: 42px;
-<<<<<<< HEAD
       bottom: 24px;
-=======
-      top: 24px;
->>>>>>> origin/main
       right: 40px;
     }
   }
@@ -320,14 +299,9 @@
 
 .price__programm-item-price-shaddow {
   position: absolute;
-<<<<<<< HEAD
   top: 49%;
   left: 50%;
   width: 100%;
-=======
-  top: 182px;
-  left: 50%;
->>>>>>> origin/main
   font-family: $primary-font;
   font-size: 80px;
   line-height: 150%;
@@ -335,7 +309,6 @@
   color: $price-shadow-text-color;
   opacity: 0.48;
   transform: translate(-50%, -50%);
-<<<<<<< HEAD
   overflow-wrap: break-word;
   word-wrap: break-word;
 
@@ -349,22 +322,6 @@
   width: 100%;
   margin-top: 2px;
   padding: 25px 0;
-=======
-
-  @media (min-width: $tablet-width) {
-    top: 224px;
-    font-size: 100px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 216px;
-  }
-}
-
-.price__programm-item-button {
-  margin-top: 2px;
-  padding: 25px 47px;
->>>>>>> origin/main
   font-family: $primary-font;
   font-size: 12px;
   line-height: 12px;
@@ -373,17 +330,6 @@
   box-shadow: 0 0 0 2px $primary-text-color;
   text-decoration: none;
   text-transform: uppercase;
-<<<<<<< HEAD
-=======
-
-  @media (min-width: $tablet-width) {
-    padding: 25px 44px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 25px 59px;
-  }
->>>>>>> origin/main
 }
 
 .price__tab-button--active:focus {
@@ -459,7 +405,6 @@
   }
 }
 
-<<<<<<< HEAD
 .price__programm-item-button:hover {
   color: $secondary-text-color;
   background: $button-faq-gradient-bg;
@@ -487,33 +432,4 @@
   color: $dark-bg-button-disabled-color;
   box-shadow: 0 0 0 2px $dark-bg-button-disabled-color;
   pointer-events: none;
-=======
-.price__programm-item:hover,
-.price__programm-item:focus,
-.price__programm-item:focus-within {
-  border-image: $dark-bg-button-focus-bg-color 1;
-}
-
-.price__programm-item:hover .price__programm-item-button,
-.price__programm-item:focus .price__programm-item-button,
-.price__programm-item:focus-within .price__programm-item-button {
-  color: $secondary-text-color;
-  background: $button-faq-gradient-bg;
-  box-shadow: none;
-  outline: none;
-}
-
-.price__programm-item:active {
-  opacity: 0.3;
-}
-
-.price__programm-item.disabled {
-  pointer-events: none;
-  opacity: 0.3;
-}
-
-.price__programm-item-button.disabled {
-  pointer-events: none;
-  opacity: 0.3;
->>>>>>> origin/main
 }

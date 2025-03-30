@@ -62,11 +62,7 @@
 }
 
 .offers__text-content-wrapper {
-<<<<<<< HEAD
   padding: 31px 30px;
-=======
-  padding: 31px 30px 25px;
->>>>>>> origin/main
   background-color: $offers-accent-bg;
 
   @media (min-width: $tablet-width) {
@@ -74,21 +70,13 @@
     flex-direction: column;
     align-items: flex-start;
     min-height: 462px;
-<<<<<<< HEAD
     padding: 40px 25px 45px;
-=======
-    padding: 40px 15px 35px;
->>>>>>> origin/main
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 460px;
-<<<<<<< HEAD
     padding: 40px 45px 45px;
-=======
-    padding: 40px 35px 35px;
->>>>>>> origin/main
   }
 }
 
@@ -103,19 +91,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 20px;
-<<<<<<< HEAD
-=======
-    padding: 0 10px;
->>>>>>> origin/main
     font-size: 24px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-<<<<<<< HEAD
-=======
-    padding: 0 10px;
->>>>>>> origin/main
     font-size: 26px;
     line-height: 26px;
   }
@@ -124,10 +104,6 @@
 .offers__text-content-wrapper span {
   display: block;
   margin: 0 0 28px;
-<<<<<<< HEAD
-=======
-  padding: 0 10px;
->>>>>>> origin/main
   font-family: $primary-font;
   font-size: 64px;
   line-height: 64px;
@@ -142,11 +118,7 @@
 }
 
 .offers__text-content-wrapper p {
-<<<<<<< HEAD
   margin: 0 0 25px;
-=======
-  margin: 0 0 19px;
->>>>>>> origin/main
   padding: 0;
   font-family: $primary-font;
   font-size: 16px;
@@ -155,7 +127,6 @@
   color: $secondary-text-color;
 
   @media (min-width: $tablet-width) {
-<<<<<<< HEAD
     max-height: 189px;
     overflow-y: auto;
     margin: 0 0 auto;
@@ -166,22 +137,11 @@
   @media (min-width: $desktop-width) {
     max-height: 185px;
   }
-=======
-    margin: 0 0 auto;
-    padding: 0 10px;
-    font-size: 18px;
-    line-height: 24px;
-  }
->>>>>>> origin/main
 }
 
 .offers__text-content-wrapper a {
   display: inline-block;
   position: relative;
-<<<<<<< HEAD
-=======
-  padding: 10px;
->>>>>>> origin/main
   font-family: $primary-font;
   font-size: 14px;
   line-height: 14px;
@@ -189,20 +149,11 @@
   color: $secondary-text-color;
   text-decoration: none;
   text-transform: uppercase;
-<<<<<<< HEAD
 
   &::after {
     @include pseudo (100%, 1px);
 
     bottom: -5px;
-=======
-  box-shadow: 0 0 0 1px transparent;
-
-  &::after {
-    @include pseudo (79%, 1px);
-
-    bottom: 5px;
->>>>>>> origin/main
     left: 50%;
     transform: translate(-50%, 0);
     background-color: $secondary-text-color;
@@ -212,11 +163,7 @@
     margin-top: 10px;
 
     &::after {
-<<<<<<< HEAD
       bottom: -5px;
-=======
-      bottom: 5px;
->>>>>>> origin/main
       left: 50%;
     }
   }
@@ -247,11 +194,7 @@
 .offers__offer-wrapper {
   position: relative;
   margin-bottom: 30px;
-<<<<<<< HEAD
   padding: 21px 10px;
-=======
-  padding: 21px 10px 15px;
->>>>>>> origin/main
   z-index: 1;
   border: 7px solid transparent;
   border-image: linear-gradient(145deg, #d10a42 12%, #00359f 100%) 1;
@@ -261,11 +204,7 @@
 
     width: 324px;
     min-height: 188px;
-<<<<<<< HEAD
     padding: 20px 20px 25px;
-=======
-    padding: 20px 10px 15px;
->>>>>>> origin/main
     text-align: left;
   }
 
@@ -291,21 +230,14 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 10px;
-<<<<<<< HEAD
     padding: 0;
-=======
->>>>>>> origin/main
     font-size: 26px;
     line-height: 26px;
   }
 }
 
 .offers__offer-wrapper p {
-<<<<<<< HEAD
   margin: 0 0 16px;
-=======
-  margin: 0 0 10px;
->>>>>>> origin/main
   padding: 0 10px;
   font-family: $primary-font;
   font-size: 14px;
@@ -315,10 +247,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 auto;
-<<<<<<< HEAD
     padding: 0;
-=======
->>>>>>> origin/main
     font-size: 16px;
     line-height: 24px;
   }
@@ -327,10 +256,6 @@
 .offers__offer-wrapper a {
   display: inline-block;
   position: relative;
-<<<<<<< HEAD
-=======
-  padding: 10px;
->>>>>>> origin/main
   font-family: $primary-font;
   font-size: 14px;
   line-height: 14px;
@@ -338,20 +263,11 @@
   color: $primary-text-color;
   text-decoration: none;
   text-transform: uppercase;
-<<<<<<< HEAD
 
   &::after {
     @include pseudo(100%, 1px);
 
     bottom: -5px;
-=======
-  box-shadow: 0 0 0 1px transparent;
-
-  &::after {
-    @include pseudo(79%, 1px);
-
-    bottom: 6px;
->>>>>>> origin/main
     left: 50%;
     transform: translate(-50%, 0);
     background-color: $primary-text-color;
@@ -361,11 +277,7 @@
     margin-top: 10px;
 
     &::after {
-<<<<<<< HEAD
       bottom: -5px;
-=======
-      bottom: 5px;
->>>>>>> origin/main
     }
   }
 }
@@ -379,13 +291,8 @@
 }
 
 .offers__text-content-wrapper a:focus {
-<<<<<<< HEAD
   outline: 1px solid $secondary-text-color;
   outline-offset: 5px;
-=======
-  outline: none;
-  box-shadow: 0 0 0 1px $secondary-text-color;
->>>>>>> origin/main
 
   &::after {
     display: none;
@@ -394,10 +301,6 @@
 
 .offers__text-content-wrapper a:active {
   opacity: 0.3;
-<<<<<<< HEAD
-=======
-  box-shadow: none;
->>>>>>> origin/main
 
   &::after {
     display: block;
@@ -420,13 +323,8 @@
 }
 
 .offers__offer-wrapper a:focus {
-<<<<<<< HEAD
   outline: 1px solid  $primary-text-color;
   outline-offset: 5px;
-=======
-  outline: none;
-  box-shadow: 0 0 0 1px  $primary-text-color;
->>>>>>> origin/main
 
   &::after {
     display: none;
@@ -435,11 +333,7 @@
 
 .offers__offer-wrapper a:active {
   opacity: 0.3;
-<<<<<<< HEAD
   outline: none;
-=======
-  box-shadow: none;
->>>>>>> origin/main
 
   &::after {
     display: block;

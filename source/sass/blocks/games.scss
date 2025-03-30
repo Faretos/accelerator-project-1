@@ -28,28 +28,17 @@
   background-color: $games-text-bg-color;
   color: $secondary-text-color;
   gap: 10px 37px;
-<<<<<<< HEAD
   align-items: flex-start;
 
   @media (min-width: $tablet-width) {
     width: 300px;
     gap: 9px 3px;
-=======
-
-  @media (min-width: $tablet-width) {
-    width: 300px;
-    gap: 0 3px;
->>>>>>> origin/main
   }
 
   @media (min-width: $desktop-width) {
     width: 500px;
     padding: 60px 80px;
-<<<<<<< HEAD
     gap: 25px 77px;
-=======
-    gap: 0 77px;
->>>>>>> origin/main
   }
 }
 
@@ -75,27 +64,17 @@
   flex-wrap: wrap;
   grid-column: 2 / 3;
   grid-row: 1 / 3;
-<<<<<<< HEAD
   gap: 4px 0;
-=======
->>>>>>> origin/main
 
   @media (min-width: $tablet-width) {
     min-height: 134px;
     grid-row: 1 / 3;
-<<<<<<< HEAD
     gap: 5px 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 18px;
     gap: 11px 0;
-=======
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 28px;
->>>>>>> origin/main
   }
 }
 
@@ -111,11 +90,7 @@
   &::after {
     @include pseudo (56px, 1px);
 
-<<<<<<< HEAD
     bottom: -3px;
-=======
-    bottom: 2px;
->>>>>>> origin/main
     background-color: $primary-page-bg;
   }
 
@@ -126,22 +101,14 @@
 
     &::after {
       width: 100px;
-<<<<<<< HEAD
       bottom: -2px;
-=======
-      bottom: 2px;
->>>>>>> origin/main
     }
   }
 
   @media (min-width: $desktop-width) {
     &::after {
       width: 95px;
-<<<<<<< HEAD
       bottom: -6px;
-=======
-      bottom: 7px;
->>>>>>> origin/main
     }
   }
 }
@@ -153,11 +120,6 @@
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
-<<<<<<< HEAD
-=======
-    margin-bottom: 6px;
-
->>>>>>> origin/main
     &--time {
       margin-bottom: 9px;
       align-self: center;
@@ -168,13 +130,10 @@
     font-size: 40px;
     line-height: 40px;
     align-self: auto;
-<<<<<<< HEAD
 
     &--time {
       margin: 2px 0 0;
     }
-=======
->>>>>>> origin/main
   }
 }
 
@@ -192,13 +151,10 @@
     font-size: 14px;
     line-height: 22px;
   }
-<<<<<<< HEAD
 
   @media (min-width: $desktop-width) {
     margin: 0 0 9px 6px;
   }
-=======
->>>>>>> origin/main
 }
 
 .games__time {
@@ -213,11 +169,7 @@
   &::after {
     @include pseudo (56px, 1px);
 
-<<<<<<< HEAD
     bottom: -4px;
-=======
-    bottom: 2px;
->>>>>>> origin/main
     background-color: $primary-page-bg;
   }
 
@@ -228,7 +180,6 @@
 
     &::after {
       width: 100px;
-<<<<<<< HEAD
       bottom: -1px;
     }
   }
@@ -237,9 +188,6 @@
     &::after {
       width: 95px;
       bottom: -7px;
-=======
-      bottom: 2px;
->>>>>>> origin/main
     }
   }
 }
@@ -265,12 +213,8 @@
 }
 
 .games__link {
-<<<<<<< HEAD
   width: 100%;
   padding: 22px 0;
-=======
-  padding: 22px 50px;
->>>>>>> origin/main
   grid-column: 1 / 3;
   font-family: $primary-font;
   font-size: 12px;
