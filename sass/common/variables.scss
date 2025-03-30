@@ -1,0 +1,23 @@
+// FONTS
+$primary-font: "Roboto Condensed", "Arial", sans-serif;
+$secondary-font: "Alumni Sans", "Arial", sans-serif;
+
+// WIDTH'S
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1366px;
+
+// TEXT COLORS
+$primary-text-color: #102654;
+$secondary-text-color: #ffffff;
+$inactive-text-color: rgba(16, 38, 84, 0.5);
+$price-text-color: #103aae;
+$price-shadow-text-color: #e8e8e8;
+$features-secondary-text-color: #2e35ac;
+$gradient-text-color-mobile: linear-gradient(128deg, #d10a42 20%, #0041ca 47%);
+$gradient-text-color-tablet: linear-gradient(128deg, #d10a42 0%, #0041ca 47%);
+
+// BACKGROUND COLORS
+$primary-page-bg: #ffffff;
+$secondary-page-bg: #f8f9fc;
+$hero-gradient-bg: linear-gradient(to left, #b4022a, #1c3477);

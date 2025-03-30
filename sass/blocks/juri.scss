@@ -1,0 +1,328 @@
+.juri {
+  background-color: $primary-page-bg;
+}
+
+.juri__wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 41px 30px 40px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 31px 45px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1366px;
+    padding: 100px 48px;
+  }
+}
+
+.juri__title {
+  margin-bottom: 19px;
+  font-family: $secondary-font;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+    font-size: 54px;
+    line-height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+    line-height: 54px;
+  }
+}
+
+.juri__list {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+  }
+}
+
+.juri__card {
+<<<<<<< HEAD
+  position: relative;
+  overflow: hidden;
+=======
+>>>>>>> origin/main
+  width: 260px;
+}
+
+.juri__image {
+  display: block;
+  object-fit: cover;
+}
+
+<<<<<<< HEAD
+.juri__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  width: 260px;
+  max-height: 100%;
+  padding: 42px 40px 50px;
+  transition: transform 0.3s ease, background-color;
+  transform: translateY(100%);
+  box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
+}
+
+.juri__name {
+  margin-bottom: 8px;
+  font-family: $primary-font;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $secondary-text-color;
+  transform: translateY(-88px);
+}
+
+.juri__subtitle {
+  display: block;
+  margin-bottom: 34px;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $secondary-text-color;
+}
+
+.juri__qualification-list {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $secondary-text-color;
+  text-align: left;
+  list-style: disc;
+}
+
+.juri__qualification-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+=======
+>>>>>>> origin/main
+.juri__prev-button {
+  display: none;
+  color: $primary-text-color;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    top: 146px;
+    left: 45px;
+    width: 60px;
+    height: 300px;
+
+    &::before {
+      @include pseudo (24px, 24px);
+
+      border-top: 1px solid $primary-text-color;
+      border-right: 1px solid $primary-text-color;
+      transform: rotate(-135deg);
+      top: 138px;
+      left: 10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 216px;
+    left: 43px;
+
+    &::before {
+      width: 23px;
+      height: 23px;
+
+      top: 135px;
+      left: 12px;
+    }
+  }
+}
+
+.juri__next-button {
+  display: none;
+  color: $primary-text-color;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    top: 146px;
+    right: 45px;
+    width: 60px;
+    height: 300px;
+
+    &::before {
+      @include pseudo (24px, 24px);
+
+      border-top: 1px solid $primary-text-color;
+      border-right: 1px solid $primary-text-color;
+      transform: rotate(45deg);
+      top: 138px;
+      left: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 216px;
+    right: 43px;
+
+    &::before {
+      width: 23px;
+      height: 23px;
+
+      top: 135px;
+      left: 27px;
+    }
+  }
+}
+
+.juri__prev-button:hover {
+  &::after {
+    @include pseudo(50px, 50px);
+
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 128px;
+    left: -8px;
+    z-index: -1;
+  }
+}
+
+.juri__next-button:hover {
+  &::after {
+    @include pseudo(50px, 50px);
+
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 128px;
+    right: -10px;
+    z-index: -1;
+  }
+}
+
+.juri__prev-button:focus {
+  outline: none;
+
+  &::after {
+    @include pseudo(50px, 50px);
+
+    outline: none;
+    background-color: $price-shadow-text-color;
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 128px;
+    left: -8px;
+    z-index: -1;
+  }
+}
+
+.juri__next-button:focus {
+  outline: none;
+
+  &::after {
+    @include pseudo(50px, 50px);
+
+    outline: none;
+    background-color: $price-shadow-text-color;
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 128px;
+    right: -10px;
+    z-index: -1;
+  }
+}
+
+.juri__prev-button:active {
+  outline: none;
+
+  &::before {
+    border-top: 1px solid $secondary-text-color;
+    border-right: 1px solid $secondary-text-color;
+  }
+
+  &::after {
+    @include pseudo(50px, 50px);
+
+    outline: none;
+    background-color: $primary-text-color;
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 128px;
+    left: -8px;
+    z-index: -1;
+  }
+}
+
+.juri__next-button:active {
+  outline: none;
+
+  &::before {
+    border-top: 1px solid $secondary-text-color;
+    border-right: 1px solid $secondary-text-color;
+  }
+
+  &::after {
+    @include pseudo(50px, 50px);
+
+    outline: none;
+    background-color: $primary-text-color;
+    border-radius: 50%;
+    border: 1px solid $primary-text-color;
+    bottom: 128px;
+    right: -10px;
+    z-index: -1;
+  }
+}
+
+.juri__prev-button.disabled {
+  pointer-events: none;
+
+  &::before {
+    opacity: 0.3;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.juri__next-button.disabled {
+  pointer-events: none;
+
+  &::before {
+    opacity: 0.3;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+<<<<<<< HEAD
+
+.juri__card:hover .juri__description,
+.juri__card:focus .juri__description {
+  outline: none;
+  transform: translateY(0);
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.juri__card:hover .juri__name,
+.juri__card:focus .juri__name {
+  transform: translateY(0);
+}
+=======
+>>>>>>> origin/main

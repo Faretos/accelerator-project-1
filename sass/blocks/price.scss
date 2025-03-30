@@ -1,0 +1,519 @@
+.price {
+  background-color: $secondary-page-bg;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      @include pseudo (325px, 324px);
+
+      bottom: 32px;
+      right: 0;
+      background-image: url("../../img/price/barbell-load-tablet@1x.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    @media (resolution >= 2dppx) {
+      &::after {
+        background-image: url("../../img/price/barbell-load-tablet@2x.png");
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    overflow: hidden;
+
+    &::after {
+      width: 462px;
+      height: 446px;
+      bottom: 0;
+      right: -79px;
+      background-size: contain;
+
+      background-image: url("../../img/price/barbell-load-desktop@1x.png");
+    }
+
+    @media (resolution >= 2dppx) {
+      &::after {
+        background-image: url("../../img/price/barbell-load-desktop@2x.png");
+      }
+    }
+  }
+}
+
+.price__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 41px 15px 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 60px 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1366px;
+    padding: 100px 103px;
+  }
+}
+
+.price__title {
+  margin-bottom: 29px;
+  font-family: $secondary-font;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.price__offers-list {
+  @include flex (row, space-between, center);
+
+  width: 290px;
+  margin: 0 auto 34px;
+  flex-wrap: wrap;
+  position: relative;
+
+  &::after {
+    @include pseudo (100%, 2px);
+
+    bottom: -4px;
+    background-color: rgba(120, 120, 120, 0.2);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    margin: 0 auto 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    margin: 0 auto 46px;
+
+    &::after {
+      bottom: -6px;
+    }
+  }
+}
+
+.price__offers-item {
+  position: relative;
+}
+
+.price__tab-button {
+  padding: 0;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $inactive-text-color;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.price__tab-button--active {
+  color: $primary-text-color;
+
+  &::after {
+    @include pseudo (100%, 2px);
+
+    bottom: -4px;
+    background-color: $price-offers-item-acitve-underline;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      bottom: -6px;
+    }
+  }
+}
+
+.price__offers-item-content {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.price__programm-list {
+  width: 290px;
+
+  @media (min-width: $tablet-width) {
+    width: 380px;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    width: 1160px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+.price__programm-item {
+  position: relative;
+  display: grid;
+<<<<<<< HEAD
+  grid-template-columns: 202px;
+=======
+  grid-template-columns: 1fr;
+>>>>>>> origin/main
+  row-gap: 18px;
+  width: 290px;
+  padding: 44px 37px 45px;
+  background-color: $primary-page-bg;
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+  border: 7px solid $primary-page-bg;
+
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+<<<<<<< HEAD
+    grid-template-columns: 246px;
+=======
+>>>>>>> origin/main
+    width: 380px;
+    padding: 58px 60px 60px;
+    row-gap: 22px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+<<<<<<< HEAD
+    grid-template-columns: 226px;
+=======
+>>>>>>> origin/main
+    width: 360px;
+    row-gap: 17px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.price__programm-item-title {
+  font-family: $primary-font;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $primary-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.price__programm-item-text {
+  margin-bottom: 46px;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: $primary-text-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.price__programm-item-price {
+  position: relative;
+  margin-bottom: 1px;
+  padding-right: 34px;
+  font-family: $primary-font;
+  font-size: 48px;
+  line-height: 150%;
+  font-weight: 700;
+  color: $price-text-color;
+  z-index: 2;
+<<<<<<< HEAD
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+=======
+>>>>>>> origin/main
+
+  &::after {
+    @include pseudo (24px, 33px);
+
+    mask-image: url("/__spritemap#sprite-currency-icon-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 100%;
+    background-color: $primary-text-color;
+<<<<<<< HEAD
+    bottom: 19px;
+=======
+    top: 20px;
+>>>>>>> origin/main
+    right: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-right: 44px;
+    font-size: 60px;
+
+    &::after {
+      width: 30px;
+      height: 42px;
+<<<<<<< HEAD
+      bottom: 24px;
+=======
+      top: 24px;
+>>>>>>> origin/main
+      right: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 45px;
+
+    &::after {
+      right: 30px;
+    }
+  }
+}
+
+.price__programm-item-price-shaddow {
+  position: absolute;
+<<<<<<< HEAD
+  top: 49%;
+  left: 50%;
+  width: 100%;
+=======
+  top: 182px;
+  left: 50%;
+>>>>>>> origin/main
+  font-family: $primary-font;
+  font-size: 80px;
+  line-height: 150%;
+  font-weight: 700;
+  color: $price-shadow-text-color;
+  opacity: 0.48;
+  transform: translate(-50%, -50%);
+<<<<<<< HEAD
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    font-size: 100px;
+  }
+}
+
+.price__programm-item-button {
+  width: 100%;
+  margin-top: 2px;
+  padding: 25px 0;
+=======
+
+  @media (min-width: $tablet-width) {
+    top: 224px;
+    font-size: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 216px;
+  }
+}
+
+.price__programm-item-button {
+  margin-top: 2px;
+  padding: 25px 47px;
+>>>>>>> origin/main
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  color: $primary-text-color;
+  box-shadow: 0 0 0 2px $primary-text-color;
+  text-decoration: none;
+  text-transform: uppercase;
+<<<<<<< HEAD
+=======
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 59px;
+  }
+>>>>>>> origin/main
+}
+
+.price__tab-button--active:focus {
+  outline: none;
+}
+
+.price__tab-button:not(.price__tab-button--active):hover {
+  color: $tab-button-hover-color;
+
+  &::after {
+    @include pseudo (100%, 2px);
+
+    bottom: -4px;
+    background-color: #787878;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      bottom: -6px;
+    }
+  }
+}
+
+.price__tab-button:not(.price__tab-button--active):focus {
+  color: $form-bg-color;
+  outline: none;
+
+  &::after {
+    @include pseudo (100%, 2px);
+
+    bottom: -4px;
+    background-color: $form-bg-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      bottom: -6px;
+    }
+  }
+}
+
+.price__tab-button:not(.price__tab-button--active):active {
+  &::after {
+    @include pseudo (100%, 2px);
+
+    bottom: -4px;
+    background-color: $offers-accent-bg;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      bottom: -6px;
+    }
+  }
+}
+
+.price__tab-button:disabled,
+.price__tab-button.disabled {
+  color: $dark-bg-button-disabled-color;
+  pointer-events: none;
+
+  &::after {
+    @include pseudo (100%, 2px);
+
+    bottom: -4px;
+    background-color: $dark-bg-button-disabled-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      bottom: -6px;
+    }
+  }
+}
+
+<<<<<<< HEAD
+.price__programm-item-button:hover {
+  color: $secondary-text-color;
+  background: $button-faq-gradient-bg;
+  box-shadow: none;
+}
+
+.price__programm-item-button:focus {
+  color: $secondary-text-color;
+  background: $dark-bg-button-focus-bg-color;
+  box-shadow: 0 0 0 2px $dark-bg-button-focus-border-color;
+  outline: none;
+}
+
+.price__programm-item:has(.price__programm-item-button:hover),
+.price__programm-item:has(.price__programm-item-button:focus) {
+  border-image: $dark-bg-button-focus-bg-color 1;
+}
+
+.price__programm-item-button:active {
+  color: $dark-bg-button-active-text-color;
+}
+
+.price__programm-item-button.disabled {
+  background-color: $primary-page-bg;
+  color: $dark-bg-button-disabled-color;
+  box-shadow: 0 0 0 2px $dark-bg-button-disabled-color;
+  pointer-events: none;
+=======
+.price__programm-item:hover,
+.price__programm-item:focus,
+.price__programm-item:focus-within {
+  border-image: $dark-bg-button-focus-bg-color 1;
+}
+
+.price__programm-item:hover .price__programm-item-button,
+.price__programm-item:focus .price__programm-item-button,
+.price__programm-item:focus-within .price__programm-item-button {
+  color: $secondary-text-color;
+  background: $button-faq-gradient-bg;
+  box-shadow: none;
+  outline: none;
+}
+
+.price__programm-item:active {
+  opacity: 0.3;
+}
+
+.price__programm-item.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.price__programm-item-button.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+>>>>>>> origin/main
+}

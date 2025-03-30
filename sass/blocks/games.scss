@@ -1,0 +1,324 @@
+.games {
+  background-color: $primary-page-bg;
+}
+
+.games__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 25px 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    padding: 60px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1366px;
+    padding: 100px 103px;
+  }
+}
+
+.games__text-content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 290px;
+  padding: 40px;
+  background-color: $games-text-bg-color;
+  color: $secondary-text-color;
+  gap: 10px 37px;
+<<<<<<< HEAD
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    gap: 9px 3px;
+=======
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    gap: 0 3px;
+>>>>>>> origin/main
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    padding: 60px 80px;
+<<<<<<< HEAD
+    gap: 25px 77px;
+=======
+    gap: 0 77px;
+>>>>>>> origin/main
+  }
+}
+
+.games__title {
+  width: 117px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  font-family: $secondary-font;
+  font-size: 48px;
+  line-height: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+    font-size: 82px;
+    line-height: 96px;
+  }
+}
+
+.games__date-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+<<<<<<< HEAD
+  gap: 4px 0;
+=======
+>>>>>>> origin/main
+
+  @media (min-width: $tablet-width) {
+    min-height: 134px;
+    grid-row: 1 / 3;
+<<<<<<< HEAD
+    gap: 5px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 18px;
+    gap: 11px 0;
+=======
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
+>>>>>>> origin/main
+  }
+}
+
+.games__date {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1px;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+
+  &::after {
+    @include pseudo (56px, 1px);
+
+<<<<<<< HEAD
+    bottom: -3px;
+=======
+    bottom: 2px;
+>>>>>>> origin/main
+    background-color: $primary-page-bg;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 24px;
+
+    &::after {
+      width: 100px;
+<<<<<<< HEAD
+      bottom: -2px;
+=======
+      bottom: 2px;
+>>>>>>> origin/main
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 95px;
+<<<<<<< HEAD
+      bottom: -6px;
+=======
+      bottom: 7px;
+>>>>>>> origin/main
+    }
+  }
+}
+
+.games__number {
+  font-family: $primary-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+<<<<<<< HEAD
+=======
+    margin-bottom: 6px;
+
+>>>>>>> origin/main
+    &--time {
+      margin-bottom: 9px;
+      align-self: center;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    align-self: auto;
+<<<<<<< HEAD
+
+    &--time {
+      margin: 2px 0 0;
+    }
+=======
+>>>>>>> origin/main
+  }
+}
+
+.games__month-and-year {
+  width: 38px;
+  margin-left: 4px;
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 62px;
+    margin: 0 0 5px 6px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+<<<<<<< HEAD
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 9px 6px;
+  }
+=======
+>>>>>>> origin/main
+}
+
+.games__time {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1px;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+
+  &::after {
+    @include pseudo (56px, 1px);
+
+<<<<<<< HEAD
+    bottom: -4px;
+=======
+    bottom: 2px;
+>>>>>>> origin/main
+    background-color: $primary-page-bg;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+
+    &::after {
+      width: 100px;
+<<<<<<< HEAD
+      bottom: -1px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 95px;
+      bottom: -7px;
+=======
+      bottom: 2px;
+>>>>>>> origin/main
+    }
+  }
+}
+
+.games__subtitle {
+  margin: 6px 0;
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 2px;
+  }
+}
+
+.games__link {
+<<<<<<< HEAD
+  width: 100%;
+  padding: 22px 0;
+=======
+  padding: 22px 50px;
+>>>>>>> origin/main
+  grid-column: 1 / 3;
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $secondary-text-color;
+  border: 2px solid $link-border-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 55px;
+    align-self: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
+  }
+}
+
+.games__image-wrapper {
+  background-color: #102654;
+}
+
+.games__image {
+  display: block;
+}
+
+.games__link:hover {
+  background-color: $primary-page-bg;
+  color: $price-text-color;
+}
+
+.games__link:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: $price-text-color;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.games__link:active {
+  background-color: $primary-page-bg;
+  color: $phone-active-color;
+  border: 2px solid $primary-page-bg;
+}
+
+.games__link.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
