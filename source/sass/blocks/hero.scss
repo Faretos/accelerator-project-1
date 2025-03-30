@@ -37,12 +37,28 @@
 }
 
 .hero__telephone {
+  width: 149px;
+  padding: 1px 0 0;
   font-family: $primary-font;
   font-size: 22px;
   line-height: 22px;
   font-weight: 700;
   color: $secondary-text-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 176px;
+    padding: 2px 0 0;
+    font-size: 26px;
+    line-height: 26px;
+  }
 }
 
 .hero__content-wrapper {
@@ -145,8 +161,9 @@
 }
 
 .hero__button {
-  margin-top: 34px;
-  padding: 22px 89px;
+  width: 100%;
+  margin-top: 33px;
+  padding: 22px 0;
   grid-row: 3 / 4;
   grid-column: 1 / -1;
   font-family: $primary-font;
@@ -157,7 +174,22 @@
   text-decoration: none;
   color: $secondary-text-color;
   background-color: transparent;
-  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 2px $primary-page-bg;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+    margin-top: 6px;
+    margin-right: 2px;
+    padding: 20px 0;
+    grid-column: 2 / 3;
+    justify-self: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 3px 0 35px;
+    padding: 25px 0;
+    align-self: center;
+  }
 }
 
 .hero__image-wrapper {
@@ -165,5 +197,60 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    grid-row: 1 / 4;
+    grid-column: 3 / -1;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-self: end;
+  }
+}
+
+.hero__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero__telephone:hover {
+  color: $phone-hover-color;
+}
+
+.hero__telephone:focus {
+  color: $phone-focus-color;
+  outline: none;
+}
+
+.hero__telephone:active {
+  color: $phone-active-color;
+  text-decoration: underline;
+}
+
+.hero__telephone.disabled {
+  color: $phone-disabled-color;
+  pointer-events: none;
+}
+
+.hero__button:hover {
+  color: $secondary-text-color;
+  background: $button-faq-gradient-bg;
+  box-shadow: none;
+}
+
+.hero__button:focus {
+  color: $secondary-text-color;
+  background: $dark-bg-button-focus-bg-color;
+  box-shadow: 0 0 0 2px $dark-bg-button-focus-border-color;
+  outline: none;
+}
+
+.hero__button:active {
+  color: $dark-bg-button-active-text-color;
+}
+
+.hero__button.disabled {
+  background-color: $primary-page-bg;
+  color: $dark-bg-button-disabled-color;
+  box-shadow: 0 0 0 2px $dark-bg-button-disabled-color;
+  pointer-events: none;
 }
