@@ -16,6 +16,9 @@ const reviewsSwiper = new Swiper('.reviews__reviews-wrapper', {
   },
   allowTouchMove: window.innerWidth < 1366,
   on: {
+    init: function () {
+      document.querySelector('.reviews__prev-slide').classList.add('disabled');
+    },
     slideChange: function () {
       document.querySelector('.reviews__prev-slide').classList.remove('disabled');
       document.querySelector('.reviews__next-slide').classList.remove('disabled');

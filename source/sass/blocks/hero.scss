@@ -218,6 +218,7 @@
 
 .hero__telephone:focus {
   color: $phone-focus-color;
+  outline: none;
 }
 
 .hero__telephone:active {

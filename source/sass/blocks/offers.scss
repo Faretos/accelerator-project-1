@@ -76,7 +76,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 460px;
-    padding: 40px 35px 35px;
+    padding: 40px 45px 45px;
   }
 }
 
@@ -96,7 +96,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 10px;
     font-size: 26px;
     line-height: 26px;
   }
@@ -195,7 +194,7 @@
 .offers__offer-wrapper {
   position: relative;
   margin-bottom: 30px;
-  padding: 21px 10px 15px;
+  padding: 21px 10px;
   z-index: 1;
   border: 7px solid transparent;
   border-image: linear-gradient(145deg, #d10a42 12%, #00359f 100%) 1;
@@ -205,7 +204,7 @@
 
     width: 324px;
     min-height: 188px;
-    padding: 20px 10px 15px;
+    padding: 20px 20px 25px;
     text-align: left;
   }
 
@@ -231,13 +230,14 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 10px;
+    padding: 0;
     font-size: 26px;
     line-height: 26px;
   }
 }
 
 .offers__offer-wrapper p {
-  margin: 0 0 10px;
+  margin: 0 0 16px;
   padding: 0 10px;
   font-family: $primary-font;
   font-size: 14px;
@@ -247,6 +247,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 auto;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
   }
@@ -255,7 +256,6 @@
 .offers__offer-wrapper a {
   display: inline-block;
   position: relative;
-  padding: 10px;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 14px;
@@ -263,12 +263,11 @@
   color: $primary-text-color;
   text-decoration: none;
   text-transform: uppercase;
-  box-shadow: 0 0 0 1px transparent;
 
   &::after {
-    @include pseudo(79%, 1px);
+    @include pseudo(100%, 1px);
 
-    bottom: 6px;
+    bottom: -5px;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: $primary-text-color;
@@ -278,7 +277,7 @@
     margin-top: 10px;
 
     &::after {
-      bottom: 5px;
+      bottom: -5px;
     }
   }
 }
@@ -324,8 +323,8 @@
 }
 
 .offers__offer-wrapper a:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px  $primary-text-color;
+  outline: 1px solid  $primary-text-color;
+  outline-offset: 5px;
 
   &::after {
     display: none;
@@ -334,7 +333,7 @@
 
 .offers__offer-wrapper a:active {
   opacity: 0.3;
-  box-shadow: none;
+  outline: none;
 
   &::after {
     display: block;
