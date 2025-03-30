@@ -128,7 +128,11 @@
   }
 
   @media (min-width: $desktop-width) {
+<<<<<<< HEAD
+    top: 520px;
+=======
     bottom: 10px;
+>>>>>>> origin/main
     width: 360px;
     height: 230px;
   }
@@ -192,6 +196,13 @@
   }
 }
 
+<<<<<<< HEAD
+.about__video-wrapper iframe {
+  border: none;
+}
+
+=======
+>>>>>>> origin/main
 .about__play-video-button {
   width: 52px;
   height: 52px;
@@ -264,7 +275,11 @@
   }
 
   @media (min-width: $desktop-width) {
+<<<<<<< HEAD
+    top: 520px;
+=======
     bottom: 10px;
+>>>>>>> origin/main
   }
 }
 

@@ -186,7 +186,11 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 110px 210px;
+<<<<<<< HEAD
+    gap: 3px 40px;
+=======
     gap: 8px 40px;
+>>>>>>> origin/main
   }
 }
 
@@ -223,6 +227,15 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     grid-row: 2 / 5;
+<<<<<<< HEAD
+    margin: 40px 0 1px;
+    align-self: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 3 / 4;
+    margin: 0;
+=======
     margin: 0 0 1px;
     align-self: flex-end;
   }
@@ -230,6 +243,7 @@
   @media (min-width: $desktop-width) {
     grid-row: 2 / 4;
     padding-top: 16px;
+>>>>>>> origin/main
   }
 }
 
@@ -256,6 +270,10 @@
   }
 
   @media (min-width: $desktop-width) {
+<<<<<<< HEAD
+    margin-bottom: 4px;
+=======
+>>>>>>> origin/main
     font-size: 22px;
     padding-top: 1px;
     line-height: 22px;
