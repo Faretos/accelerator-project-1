@@ -151,12 +151,14 @@
   border-bottom: 1px solid $secondary-text-color;
 }
 
-.application-form__input:focus {
-  border: 1px solid $secondary-text-color;
-}
-
 .application-form__input.error {
   border-bottom: 1px solid $form-error-color;
+}
+
+.application-form__input:focus {
+  outline: 1px solid $secondary-text-color;
+  border-bottom: none;
+  box-shadow: none;
 }
 
 .application-form__input:disabled,

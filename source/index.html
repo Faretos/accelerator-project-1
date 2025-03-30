@@ -730,7 +730,7 @@
               <label class="visually-hidden" for="name">Укажите свое имя</label>
               <input class="application-form__input" placeholder="Имя" type="text" name="name" id="name" pattern="[A-Za-zА-Яа-яЁё\s]+" required>
               <!-- ERROR MESAGES -->
-              <span class="application-form__form-error-text" id="name-error-text">Недопустимое имя</span>
+              <span class="application-form__form-error-text" id="name-error-text">Недопустимое имя (Только буквы)</span>
               <span class="application-form__form-error-text" id="name-required-text">Поле необходимо заполнить</span>
             </div>
             <!-- PHONE -->
@@ -738,7 +738,7 @@
               <label class="visually-hidden" for="phone">Укажите свой телефон</label>
               <input class="application-form__input" placeholder="Телефон" type="tel" name="phone" id="phone" pattern="^+7\d{10}$" minlength="12" maxlength="12" required>
               <!-- ERROR MESAGES -->
-              <span class="application-form__form-error-text" id="phone-error-text">Недопустимый номер телефона</span>
+              <span class="application-form__form-error-text" id="phone-error-text">Недопустимый номер (+79999999999)</span>
               <span class="application-form__form-error-text" id="phone-required-text">Поле необходимо заполнить</span>
             </div>
             <button class="application-form__form-button" type="submit">Отправить</button>
