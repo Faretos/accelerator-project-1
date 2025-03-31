@@ -40,7 +40,7 @@ const reviewsSwiper = new Swiper('.reviews__reviews-wrapper', {
 });
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth < 1366) {
+  if (window.innerWidth < 768) {
     reviewsSwiper.allowTouchMove = true;
   } else {
     reviewsSwiper.allowTouchMove = false;
